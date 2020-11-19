@@ -5,6 +5,8 @@
 .review__title {
   font-weight: 400;
   font-size: 36px;
+
+  @include no-indent();
 }
 
 .review__desc {
@@ -12,6 +14,12 @@
   font-size: 14px;
   line-height: 18px;
   color: $special_dark-grey;
+
+  @include no-indent();
+}
+
+.review__desc-list {
+  @include no-indent();
 }
 
 .review__term {
@@ -23,11 +31,15 @@
   font-size: 12px;
   line-height: 12px;
   color: $special_dark-grey;
+
+  @include no-indent();
 }
 
 .review__text {
   font-size: 14px;
   text-transform: uppercase;
+
+  @include no-indent();
 }
 
 .slider__state {

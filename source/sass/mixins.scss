@@ -1,10 +1,10 @@
-@mixin global-font($base-font-family, $base-font-style) {
-  font-family: $base-font-family;
-  font-style: $base-font-style;
-}
-
-@mixin page-promo-text($font-size, $register, $text-color) {
+@mixin page-promo-text($font-size: 14px, $register: uppercase, $text-color: $basic-white) {
   font-size: $font-size;
   text-transform: $register;
   color: $text-color;
+}
+
+@mixin no-indent($margin: 0, $padding: 0) {
+  margin: $margin;
+  padding: $padding;
 }

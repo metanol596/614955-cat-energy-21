@@ -1,0 +1,28 @@
+.page-promo__intro {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
+  color: $basic-white;
+
+  @include no-indent();
+}
+
+.page-body__main-title {
+  margin-bottom: 25px;
+}
+
+.page-promo__slogan {
+  @include page-promo-text();
+
+  @include no-indent();
+}
+
+.page-body__slogan {
+  margin-bottom: 302px;
+}
+
+.page-promo__link {
+  @include page-promo-text();
+
+  background-color: $basic-green;
+}

@@ -1,0 +1,42 @@
+.page-main__features {
+  margin-bottom: 27px;
+}
+
+.features__list {
+  @include no-indent();
+}
+
+.features__item {
+  background-color: $basic-grey;
+
+  padding: 21px 20px 18px;
+}
+
+.features__slim-item {
+  margin-bottom: 20px;
+}
+
+.features__title {
+  font-weight: 400;
+  font-size: 24px;
+  text-transform: uppercase;
+
+  @include no-indent();
+}
+
+.features__desc {
+  font-family: $add-font;
+  font-size: 14px;
+  line-height: 18px;
+  color: $special_dark-grey;
+
+  @include no-indent();
+
+  margin-bottom: 38px;
+}
+
+.features__link {
+  font-size: 16px;
+  text-transform: uppercase;
+  color: $base-black;
+}

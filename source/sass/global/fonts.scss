@@ -1,7 +1,8 @@
 /* oswald-regular - latin_cyrillic */
 
 @font-face {
-  @include global-font("Oswald", normal);
+  font-family: "Oswald";
+  font-style: normal;
   font-weight: 400;
   src: local(""),
     url("../fonts/oswald-v35-latin_cyrillic-regular.woff2") format("woff2"),
@@ -11,7 +12,8 @@
 /* oswald-500 - latin_cyrillic */
 
 @font-face {
-  @include global-font("Oswald", normal);
+  font-family: "Oswald";
+  font-style: normal;
   font-weight: 500;
   src: local(""),
     url("../fonts/oswald-v35-latin_cyrillic-500.woff2") format("woff2"),

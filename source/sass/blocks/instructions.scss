@@ -1,6 +1,12 @@
 .instructions__title {
   font-weight: 400;
   font-size: 36px;
+
+  @include no-indent();
+}
+
+.instructions__list {
+  @include no-indent();
 }
 
 .instructions__text {
@@ -8,4 +14,6 @@
   font-size: 14px;
   line-height: 18px;
   color: $special_dark-grey;
+
+  @include no-indent();
 }
