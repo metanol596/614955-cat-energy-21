@@ -1,0 +1,10 @@
+@mixin global-font($base-font-family, $base-font-style) {
+  font-family: $base-font-family;
+  font-style: $base-font-style;
+}
+
+@mixin page-promo-text($font-size, $register, $text-color) {
+  font-size: $font-size;
+  text-transform: $register;
+  color: $text-color;
+}

@@ -1,0 +1,40 @@
+.review {
+  background-color: #eaeaea;
+}
+
+.review__title {
+  font-weight: 400;
+  font-size: 36px;
+}
+
+.review__desc {
+  font-family: $add-font;
+  font-size: 14px;
+  line-height: 18px;
+  color: $special_dark-grey;
+}
+
+.review__term {
+  font-size: 24px;
+}
+
+.review__detail {
+  font-family: $add-font;
+  font-size: 12px;
+  line-height: 12px;
+  color: $special_dark-grey;
+}
+
+.review__text {
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.slider__state {
+  font-family: $base-font;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #000000;
+}

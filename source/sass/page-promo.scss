@@ -1,0 +1,14 @@
+.page-promo__intro {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
+  color: #ffffff;
+}
+
+.page-promo__slogan {
+  @include page-promo-text(14px, uppercase, #ffffff);
+}
+
+.page-promo__link {
+  @include page-promo-text(14px, uppercase, #ffffff);
+}

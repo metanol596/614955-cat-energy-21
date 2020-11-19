@@ -3,9 +3,10 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body class="page-body">
-    <header class="page-header">
+    <header class="page-header page-header--with-background">
       <div class="container">
         <a class="page-header__logo-link">
           <img class="page-header__logo-icon" src="https://via.placeholder.com/33x38" alt="Логотип магазина Cat Energy">
@@ -26,8 +27,6 @@
           </ul>
         </nav>
       </div>
-    </header>
-    <main class="page-main">
       <section class="page-promo">
         <div class="container">
           <h1 class="page-promo__intro">Функциональное питание для котов</h1>
@@ -37,6 +36,8 @@
           <a class="link page-promo__link" href="form.html">Подобрать программу</a>
         </div>
       </section>
+    </header>
+    <main class="page-main">
       <section class="features">
         <div class="container">
           <h2 class="visually-hidden">Виды кормов в нашем магазине</h2>
@@ -68,7 +69,7 @@
       </section>
       <section class="instructions">
         <div class="container">
-          <h2 class="section-title instructions__title">Как это работает</h2>
+          <h2 class="instructions__title">Как это работает</h2>
           <ul class="list instructions__list">
             <li class="instructions__item">
               <p class="instructions__text">
@@ -103,7 +104,7 @@
       </section>
       <section class="review">
         <div class="container">
-          <h2 class="section-title review__title">Живой пример</h2>
+          <h2 class="review__title">Живой пример</h2>
           <p class="review__desc">
             Борис сбросил 5 кг за 2 месяца, просто
             заменив свой обычный корм на Cat
@@ -115,7 +116,7 @@
           <dl class="review__desc-list">
             <dt class="review__term">5 кг</dt>
             <dd class="review__detail">Снижение веса</dd>
-            <dt class="review__term">60 ДНЕЙ</dt>
+            <dt class="review__term">60 дней</dt>
             <dd class="review__detail">Затрачено времени</dd>
           </dl>
           <p class="review__text">
@@ -129,9 +130,9 @@
               <img src="https://via.placeholder.com/251x240" alt="Изображение кота после нашего корма">
             </div>
             <div class="slider__inner">
-              <button class="previous-state" type="button">Было</button>
+              <button class="slider__state" type="button">Было</button>
               <input class="slider__range" type="range" aria-label="Ползунок">
-              <button class="present-state" type="button">Стало</button>
+              <button class="slider__state" type="button">Стало</button>
             </div>
           </div>
         </div>
@@ -139,12 +140,12 @@
       <section class="contacts">
         <h2 class="visually-hidden">Контакты</h2>
         <div class="contacts__content container">
-          <p class="contacts__text">
+          <p class="contacts__invite-text">
             Приглашаем
             к сотрудничеству
             дилеров!
           </p>
-          <p class="contacts__text">
+          <p class="contacts__address-text">
             Ул. Большая
             Конюшенная, д. 19/8
             Санкт-Петербург
@@ -171,7 +172,7 @@
             <a class="socials__link link" href="https://facebook.com" aria-label="Мы в Фейсбуке" target="_blank">Фейсбук</a>
           </li>
         </ul>
-        <a class="page-footer__academy-link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
+        <a class="page-footer__academy-link link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
           <p class="page-footer__academy-text">HTML Academy</p>
           <img src="https://via.placeholder.com/27x34" alt="Логотип HTML Academy">
         </a>
