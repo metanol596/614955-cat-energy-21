@@ -1,3 +1,11 @@
+.page-main__instructions {
+  margin-bottom: 42px;
+}
+
+.instructions__title-wrap {
+  padding-bottom: 38px;
+}
+
 .instructions__title {
   font-weight: 400;
   font-size: 36px;
@@ -7,6 +15,10 @@
 
 .instructions__list {
   @include no-indent();
+}
+
+.page-main__instructions-item {
+  margin-bottom: 20px;
 }
 
 .instructions__text {

@@ -1,5 +1,12 @@
 .review {
-  background-color: #eaeaea;
+  background-color: $special-darker-whisper;
+
+  padding-bottom: 25px;
+}
+
+.review__title-wrap {
+  padding-top: 27px;
+  padding-bottom: 33px;
 }
 
 .review__title {
@@ -18,8 +25,16 @@
   @include no-indent();
 }
 
+.page-main__review-desc {
+  margin-bottom: 25px;
+}
+
 .review__desc-list {
   @include no-indent();
+}
+
+.page-main__review-desc-list {
+  margin-bottom: 25px;
 }
 
 .review__term {
@@ -42,6 +57,14 @@
   @include no-indent();
 }
 
+.page-main__review-text {
+  margin-bottom: 42px;
+}
+
+.review__slider-item {
+  margin-bottom: 23px;
+}
+
 .slider__state {
   font-family: $base-font;
   font-weight: 400;
@@ -49,4 +72,8 @@
   font-size: 16px;
   text-transform: uppercase;
   color: #000000;
+
+  background-color: $special-darker-whisper;
+
+  border: none;
 }
