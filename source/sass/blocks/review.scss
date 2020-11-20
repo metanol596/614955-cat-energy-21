@@ -25,16 +25,8 @@
   @include no-indent();
 }
 
-.page-main__review-desc {
-  margin-bottom: 25px;
-}
-
 .review__desc-list {
   @include no-indent();
-}
-
-.page-main__review-desc-list {
-  margin-bottom: 25px;
 }
 
 .review__term {
@@ -55,10 +47,6 @@
   text-transform: uppercase;
 
   @include no-indent();
-}
-
-.page-main__review-text {
-  margin-bottom: 42px;
 }
 
 .review__slider-item {

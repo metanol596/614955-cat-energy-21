@@ -7,17 +7,9 @@
   @include no-indent();
 }
 
-.page-body__main-title {
-  margin-bottom: 25px;
-}
-
 .page-promo__slogan {
   @include page-promo-text();
   @include no-indent();
-}
-
-.page-body__slogan {
-  margin-bottom: 302px;
 }
 
 .page-promo__link {

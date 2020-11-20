@@ -1,7 +1,3 @@
-.page-body__page-header {
-  margin-bottom: 20px;
-}
-
 .page-header--with-background {
   background-image:
     url("../../img/promo-good-b-img.png"),
@@ -18,10 +14,6 @@
   background-repeat: no-repeat;
 
   min-height: 482px;
-}
-
-.main-nav__list {
-  @include no-indent();
 }
 
 .main-nav__toggle {
