@@ -1,0 +1,67 @@
+.review {
+  background-color: $special-darker-whisper;
+
+  padding-bottom: 25px;
+}
+
+.review__title-wrap {
+  padding-top: 27px;
+  padding-bottom: 33px;
+}
+
+.review__title {
+  font-weight: 400;
+  font-size: 36px;
+
+  @include no-indent();
+}
+
+.review__desc {
+  font-family: $add-font;
+  font-size: 14px;
+  line-height: 18px;
+  color: $special_dark-grey;
+
+  @include no-indent();
+}
+
+.review__desc-list {
+  @include no-indent();
+}
+
+.review__term {
+  font-size: 24px;
+}
+
+.review__detail {
+  font-family: $add-font;
+  font-size: 12px;
+  line-height: 12px;
+  color: $special_dark-grey;
+
+  @include no-indent();
+}
+
+.review__text {
+  font-size: 14px;
+  text-transform: uppercase;
+
+  @include no-indent();
+}
+
+.review__slider-item {
+  margin-bottom: 23px;
+}
+
+.slider__state {
+  font-family: $base-font;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #000000;
+
+  background-color: $special-darker-whisper;
+
+  border: none;
+}
