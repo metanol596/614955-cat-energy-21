@@ -6,6 +6,7 @@
 
 .form__label {
   font-size: 16px;
+  line-height: 18px;
   text-transform: uppercase;
   color: $special-dark-grey;
 }
@@ -59,6 +60,7 @@
   font-weight: 400;
   font-style: normal;
   font-size: 16px;
+  line-height: 20px;
   text-transform: uppercase;
   color: $basic-white;
 
@@ -70,4 +72,5 @@
 .form__legend {
   font-family: $add-font;
   font-size: 14px;
+  line-height: 16px;
 }

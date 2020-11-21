@@ -11,10 +11,12 @@
 .page-promo__slogan {
   @include page-promo-text();
   @include no-indent();
+  line-height: 14px;
 }
 
 .page-promo__link {
   @include page-promo-text();
+  line-height: 18px;
 
   background-color: $basic-green;
 }
