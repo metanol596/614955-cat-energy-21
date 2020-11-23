@@ -9,7 +9,8 @@
   text-transform: uppercase;
   color: $base-black;
 
-  @include no-indent();
+  margin: 0;
+  padding: 0;
 }
 
 .contacts__address-text {
@@ -18,5 +19,6 @@
   line-height: 20px;
   color: $special_dark-grey;
 
-  @include no-indent();
+  margin: 0;
+  padding: 0;
 }

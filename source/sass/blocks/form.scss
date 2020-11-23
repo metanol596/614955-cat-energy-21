@@ -19,8 +19,19 @@
   color: $base-black;
 }
 
-.form__input {
-  @include input();
+.form__input,
+.feedback__comment-filed {
+  font-family: $base-font;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $special-dark-grey;
+
+  &::placeholder {
+    color: $special-dark-grey;
+  }
 }
 
 .form__contacts {
@@ -45,10 +56,6 @@
   line-height: 26px;
 
   margin: 0;
-}
-
-.feedback__comment-filed {
-  @include input();
 }
 
 .form__for-indent-wrap {

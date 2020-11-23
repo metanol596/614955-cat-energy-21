@@ -1,9 +1,11 @@
-.catalog-list__link {
+.catalog-list__title {
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
   color: $special-nero;
+
+  margin: 0;
 }
 
 .catalog-list__table-row {

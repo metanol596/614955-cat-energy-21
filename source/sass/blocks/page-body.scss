@@ -6,17 +6,27 @@
   font-weight: 400;
   color: $base-black;
 
-  @include no-indent();
+  margin: 0;
+  padding: 0;
 }
 
 .page-body__page-header {
   margin-bottom: 20px;
 }
 
+@media (min-width: $tablet-width) {
+  .page-body__page-header {
+    margin-bottom: 0;
+  }
+}
+
 .page-body__main-title {
   margin-bottom: 25px;
 }
 
-.page-body__slogan {
-  margin-bottom: 302px;
+@media (min-width: $tablet-width) {
+  .page-body__main-title {
+    margin-bottom: 41px;
+  }
 }
+

@@ -8,28 +8,34 @@
   </head>
   <body class="page-body">
     <header class="page-header page-body__page-header page-header--with-background container">
-      <a class="page-header__logo-link">
-        <img src="https://via.placeholder.com/33x38" alt="">
-        <img src="https://via.placeholder.com/101x18" alt="">
-      </a>
-      <nav class="page-header__nav main-nav">
-        <button class="main-nav__toggle" aria-label="Открыть / Закрыть меню">
-          <img src="https://via.placeholder.com/24x16" alt="">
-        </button>
-        <ul class="list-reset main-nav__list">
-          <li class="main-nav__item">
-            <a class="link main-nav__link">Главная</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="link main-nav__link" href="catalog.html">Каталог продукции</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="link main-nav__link" href="form.html">Подбор программы</a>
-          </li>
-        </ul>
-      </nav>
+      <div class="page-header__upper-row-wrap">
+        <div class="page-header__upper-inner-wrap">
+          <a class="page-header__logo-link">
+            <img class="page-header__logo-icon" src="https://via.placeholder.com/33x38" alt="">
+            <img src="https://via.placeholder.com/101x18" alt="">
+          </a>
+          <button class="page-header__toggle" aria-label="Открыть / Закрыть меню">
+            <img src="https://via.placeholder.com/24x16" alt="">
+          </button>
+        </div>
+        <nav class="page-header__nav main-nav">
+          <ul class="list-reset main-nav__list">
+            <li class="main-nav__item">
+              <a class="link main-nav__link main-nav__link--current">Главная</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="link main-nav__link" href="catalog.html">Каталог продукции</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="link main-nav__link main-nav__link--last-of-type" href="form.html">Подбор программы</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
       <section class="page-promo">
-        <h1 class="page-promo__intro page-body__main-title">Функциональное питание для котов</h1>
+        <div class="page-promo__intro-wrap">
+          <h1 class="page-promo__intro page-body__main-title">Функциональное питание для котов</h1>
+        </div>
         <p class="page-promo__slogan page-body__slogan">
           Занялся собой? Займись котом!
         </p>
