@@ -2,6 +2,32 @@
   background-color: $basic_grey;
 }
 
+.page-footer__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 39px;
+  padding-bottom: 22px;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+  }
+}
+
+.page-footer__logo-link {
+  padding-bottom: 32px;
+}
+
+.page-footer__socials {
+  padding-top: 20px;
+  padding-bottom: 21px;
+}
+
+.page-footer__academy-link {
+  padding-top: 22px;
+}
+
 .page-footer__academy-text {
   font-family: $add-font;
   font-size: 16px;

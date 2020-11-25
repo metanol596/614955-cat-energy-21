@@ -1,9 +1,21 @@
 .page-main__features {
   margin-bottom: 27px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 71px;
+  }
 }
 
 .page-main__instructions {
   margin-bottom: 42px;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+  }
 }
 
 .page-main__instructions-item {
@@ -20,6 +32,10 @@
 
 .page-main__review-text {
   margin-bottom: 42px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
 }
 
 .page-main__title {

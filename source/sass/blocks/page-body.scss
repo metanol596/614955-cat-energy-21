@@ -12,21 +12,16 @@
 
 .page-body__page-header {
   margin-bottom: 20px;
-}
 
-@media (min-width: $tablet-width) {
-  .page-body__page-header {
+  @media (min-width: $tablet-width) {
     margin-bottom: 0;
   }
 }
 
 .page-body__main-title {
   margin-bottom: 25px;
-}
 
-@media (min-width: $tablet-width) {
-  .page-body__main-title {
+  @media (min-width: $tablet-width) {
     margin-bottom: 41px;
   }
 }
-

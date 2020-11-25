@@ -1,5 +1,9 @@
 .instructions__title-wrap {
   padding-bottom: 38px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 32px;
+  }
 }
 
 .instructions__title {
@@ -9,6 +13,64 @@
 
   margin: 0;
   padding: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
+}
+
+.instructions__list {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.instructions__item {
+  @media (min-width: $tablet-width) {
+    position: relative;
+    min-height: 280px;
+    padding-top: 151px;
+
+    @media (min-width: $tablet-width) {
+      &::after {
+        content: "";
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: -100;
+
+        font-size: 280px;
+        line-height: 280px;
+        color: $basic-grey;
+      }
+
+      &:first-of-type::after {
+        content: "1";
+      }
+
+      &:nth-of-type(2)::after {
+        content: "2";
+      }
+
+      &:nth-of-type(3)::after {
+        content: "3";
+      }
+
+      &:last-of-type::after {
+        content: "4";
+      }
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 151px;
+  }
 }
 
 .instructions__text {
@@ -19,4 +81,13 @@
 
   margin: 0;
   padding: 0;
+  width: 200px;
+
+  @media (min-width: $tablet-width) {
+    width: 245px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 201px;
+  }
 }
