@@ -1,6 +1,29 @@
 .contacts {
+  @media (min-width: $desktop-width) {
+    position: relative;
+  }
+}
+
+.contacts__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   padding-top: 28px;
   padding-bottom: 22px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 66px;
+    padding-bottom: 51px;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    left: 110px;
+    top: 95px;
+    padding: 66px 76px 51px 89px;
+
+    background-color: $basic-white;
+  }
 }
 
 .contacts__invite-text {
@@ -9,7 +32,16 @@
   text-transform: uppercase;
   color: $base-black;
 
-  @include no-indent();
+  margin: 0;
+  padding: 0;
+  width: 140px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 21px;
+
+    width: 171px;
+  }
 }
 
 .contacts__address-text {
@@ -18,5 +50,15 @@
   line-height: 20px;
   color: $special_dark-grey;
 
-  @include no-indent();
+  margin: 0;
+  padding: 0;
+  width: 140px;
+
+  @media (min-width: $tablet-width) {
+    width: 159px;
+    text-align: right;
+
+    font-size: 16px;
+    line-height: 20px;
+  }
 }
