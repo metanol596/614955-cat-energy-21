@@ -166,14 +166,12 @@
   &:focus {
     outline: 2px solid $special-dark-grey;
   }
-
-  &:invalid {
-    outline: 2px solid $status-error;
-  }
 }
 
 .form__email-input {
-  margin-right: 80px;
+  @media (min-width: $desktop-width) {
+    margin-right: 80px;
+  }
 }
 
 .form__feedback-comment-field {
