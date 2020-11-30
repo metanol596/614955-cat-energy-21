@@ -4,6 +4,7 @@
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
+    margin-right: -35px;
   }
 }
 
@@ -12,20 +13,22 @@
 }
 
 .main-nav__link {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 20px;
-  color: $base-black;
-  text-transform: uppercase;
+  @media (max-width: $mobile-width-only) {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 20px;
+    color: $base-black;
+    text-transform: uppercase;
 
-  background-color: $basic-white;
+    background-color: $basic-white;
 
-  display: block;
-  text-align: center;
-  padding-top: 22px;
-  padding-bottom: 24px;
-  border-top: 1px solid $special-light-whisper;
-  min-width: 320px;
+    display: block;
+    text-align: center;
+    padding-top: 22px;
+    padding-bottom: 24px;
+    border-top: 1px solid $special-light-whisper;
+    width: 100vw;
+  }
 
   @media (min-width: $tablet-width) {
     font-weight: 400;
@@ -36,10 +39,6 @@
     padding-bottom: 9px;
     margin-right: 35px;
     min-width: auto;
-
-    &--last-of-type {
-      margin-right: 0;
-    }
 
     &--current {
       border-bottom: 2px solid $basic-green;
@@ -69,6 +68,10 @@
     line-height: 30px;
     color: $basic-white;
 
+    &--form-color {
+      color: $base-black;
+    }
+
     background-color: transparent;
 
     &--current {
@@ -82,6 +85,20 @@
       &:active {
         opacity: 0.3;
         border-bottom: 2px solid $basic-white;
+      }
+    }
+
+    &--form-color-current {
+      border-bottom: 2px solid $basic-green;
+
+      &:hover {
+        opacity: 0.6;
+        border-bottom: 2px solid $base-black;
+      }
+
+      &:active {
+        opacity: 0.3;
+        border-bottom: 2px solid $base-black;
       }
     }
 

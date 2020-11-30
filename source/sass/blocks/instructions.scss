@@ -28,6 +28,8 @@
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
+
+    counter-reset: section;
   }
 }
 
@@ -39,31 +41,17 @@
 
     @media (min-width: $tablet-width) {
       &::after {
-        content: "";
-        position: absolute;
-        right: 0;
-        top: 0;
-        z-index: -100;
+        counter-increment: section;
+        content: counter(section);
 
         font-size: 280px;
         line-height: 280px;
         color: $basic-grey;
-      }
 
-      &:first-of-type::after {
-        content: "1";
-      }
-
-      &:nth-of-type(2)::after {
-        content: "2";
-      }
-
-      &:nth-of-type(3)::after {
-        content: "3";
-      }
-
-      &:last-of-type::after {
-        content: "4";
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: -100;
       }
     }
   }

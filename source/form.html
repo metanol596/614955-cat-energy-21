@@ -8,89 +8,108 @@
   </head>
   <body class="page-body">
     <header class="page-header container">
-      <a class="page-header__logo-link" href="index.html">
-        <img class="page-header__logo-icon" src="https://via.placeholder.com/33x38" alt="Логотип магазина Cat Energy">
-        <img class="page-header__logo-brand" src="https://via.placeholder.com/101x18" alt="Логотип с названием нашей компании - Cat Energy">
-      </a>
-      <nav class="page-header__nav main-nav">
-        <button class="main-nav__toggle" aria-label="Открыть / Закрыть меню"></button>
-        <ul class="list-reset main-nav__list">
-          <li class="main-nav__item">
-            <a class="link main-nav__link" href="index.html">Главная</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="link main-nav__link" href="catalog.html">Каталог продукции</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="link main-nav__link">Подбор программы</a>
-          </li>
-        </ul>
-      </nav>
+      <div class="page-header__upper-row-wrap">
+        <div class="page-header__upper-inner-wrap">
+          <a class="page-header__logo-link">
+            <img class="page-header__logo-icon" src="https://via.placeholder.com/33x38" alt="">
+            <img src="https://via.placeholder.com/101x18" alt="">
+          </a>
+          <button class="page-header__toggle" aria-label="Открыть / Закрыть меню">
+            <img src="https://via.placeholder.com/24x16" alt="">
+          </button>
+        </div>
+        <nav class="page-header__nav main-nav">
+          <ul class="list-reset main-nav__list">
+            <li class="main-nav__item">
+              <a class="link main-nav__link main-nav__link--form-color" href="index.html">Главная</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="link main-nav__link main-nav__link--form-color" href="catalog.html">Каталог продукции</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="link main-nav__link main-nav__link--form-color main-nav__link--form-color-current main-nav__link--current">Подбор программы</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
     <main class="page-main">
-      <div class="page-main__to-center-wrap container">
-        <h1 class="page-main__title page-main__form-page-title">Подбор программы</h1>
-        <p class="page-main__lead page-main__form-page-lead">
+      <div class="container">
+        <div class="page-main__title-wrap">
+          <h1 class="page-main__title">Подбор программы</h1>
+        </div>
+        <p class="page-main__lead">
           Заполните анкету, и мы подберем
           программу питания для вашего кота
         </p>
       </div>
       <form class="page-main__form form container" action="https://echo.htmlacademy.ru" method="POST">
-        <div class="form__wrap page-main__form-wrap">
-          <fieldset class="form__container page-main__text-form-container">
-            <label class="form__label">Имя:&#42;
-              <input class="form__input page-main__text-form-input" type="text" name="cat-name" id="cat-name-id" placeholder="Барсик" required>
-            </label>
-            <label class="form__label">Вес (кг):&#42;
-              <input class="form__input page-main__text-form-input" type="text" name="cat-weight" id="cat-weight-id" placeholder="7" required>
-            </label>
-            <label class="form__label">Возраст (лет):
+        <div class="form__wrap">
+          <div class="form__container form__text-input-container">
+            <div class="form__text-input-row-container">
+              <label class="form__label form__text-input-label">Имя:&#42;</label>
+              <input class="form__input" type="text" name="cat-name" id="cat-name-id" placeholder="Барсик" required>
+            </div>
+            <div class="form__text-input-row-container">
+              <label class="form__label form__text-input-label">Вес&nbsp;(кг):&#42;</label>
+              <input class="form__input" type="text" name="cat-weight" id="cat-weight-id" placeholder="7" required>
+            </div>
+            <div class="form__text-input-row-container form__text-input-row-container--null-indent">
+              <label class="form__label form__text-input-label">Возраст&nbsp;(лет):</label>
               <input class="form__input" type="text" name="cat-age" id="cat-age-id" placeholder="7">
-            </label>
-          </fieldset>
-          <fieldset class="form__container">
-            <label class="form__label form__label--radio-label-color">
-              <input class="form__input" type="radio" name="goal" id="slimming-id" placeholder="Похудение" checked>
-              Похудение
-            </label>
-            <label class="form__label form__label--radio-label-color">
-              <input class="form__input" type="radio" name="goal" id="weight-gain-id" placeholder="Набор массы">
-              Набор массы
-            </label>
-            <label class="form__label form__label--radio-label-color">
-              <input class="form__input" type="radio" name="goal" id="advice-id" placeholder="Совет">
-              Не знаю (Нужен ваш совет)
-            </label>
-          </fieldset>
+            </div>
+          </div>
+          <div class="form__container form__radio-container">
+            <div class="form__radio-row-container">
+              <input class="form__input form__input-radio visually-hidden" type="radio" name="goal" id="slimming-id" placeholder="Похудение" checked>
+              <label class="form__label form__label-radio" for="slimming-id">Похудение</label>
+            </div>
+            <div class="form__radio-row-container">
+              <input class="form__input form__input-radio visually-hidden" type="radio" name="goal" id="weight-gain-id" placeholder="Набор массы">
+              <label class="form__label form__label-radio" for="weight-gain-id">Набор массы</label>
+            </div>
+            <div class="form__radio-row-container form__radio-row-container--null-indent">
+              <input class="form__input form__input-radio visually-hidden" type="radio" name="goal" id="advice-id" placeholder="Совет">
+              <label class="form__label form__label-radio" for="advice-id">Не знаю (Нужен ваш совет)</label>
+            </div>
+          </div>
         </div>
         <fieldset class="form__container form__contacts">
-          <div class="form__section-title-wrap">
-            <h2 class="form__section-title">Контактные данные (владельца кота)</h2>
-          </div>
-          <label class="form__label" for="email-id">E-mail:&#42;</label>
-          <input class="form__input" type="email" name="email-field" id="email-id" placeholder="kuklachev@gmail.com" required>
-          <label class="form__label" for="tel-id">Телефон:&#42;</label>
-          <input class="form__input" type="tel" name="tel-field" id="tel-id" placeholder="8 (960) 900-60-90" required>
+          <legend class="form__section-title form__section-title--contacts-block-size">Контактные данные (владельца кота)</legend>
+          <div class="form__contact-container">
+            <div class="form__contact-row-container form__contact-row-container--indent">
+              <label class="form__label form__contacts-label">E&#8209;mail:&#42;</label>
+              <input class="form__input form__email-input" type="email" name="email-field" id="email-id" placeholder="kuklachev@gmail.com" required>
+            </div>
+            <div class="form__contact-row-container">
+              <label class="form__label form__contacts-label">Телефон:&#42;</label>
+              <input class="form__input" type="tel" name="tel-field" id="tel-id" placeholder="8 (960) 900-60-90" required>
+            </div>
+          <div>
         </fieldset>
-        <fieldset class="form__container form__feedback feedback">
-          <div class="form__section-title-wrap">
-            <h2 class="form__section-title">Комментарий</h2>
-          </div>
-          <textarea class="feedback__comment-filed" name="comment-filed" placeholder="Расскажите обо всех повадках кота" aria-label="Расскажите обо всех повадках кота"></textarea>
+        <fieldset class="form__container form__feedback">
+          <legend class="form__section-title form__feedback-section-title form__section-title--feedback-block-size">Комментарий</legend>
+          <textarea class="form__feedback-comment-field" name="comment-field" rows="8" placeholder="Расскажите обо всех повадках кота" aria-label="Расскажите обо всех повадках кота"></textarea>
         </fieldset>
         <fieldset class="form__container form__add-info">
-          <div class="form__section-title-wrap">
-            <h2 class="form__section-title">Дополнительно</h2>
-          </div>
-          <div class="form__container">
-            <input class="form__input" type="checkbox" name="add-good" placeholder="Сахарозаменитель" id="add-sweetener" checked>
-            <label class="form__label form__label--checkbox-label-color" for="add-sweetener">Сахарозаменитель</label>
-            <input class="form__input" type="checkbox" name="add-good" placeholder="Питьевая вода" id="add-water">
-            <label class="form__label form__label--checkbox-label-color" for="add-water">Питьевая вода</label>
-            <input class="form__input" type="checkbox" name="add-good" placeholder="Молоко" id="add-milk">
-            <label class="form__label form__label--checkbox-label-color" for="add-milk">Молоко</label>
-            <input class="form__input" type="checkbox" name="add-good" placeholder="Витамины" id="add-vitamins">
-            <label class="form__label form__label--checkbox-label-color" for="add-vitamins">Витамины</label>
+          <legend class="form__section-title form__add-info-section-title form__section-title--add-info-block-size">Дополнительно</legend>
+          <div class="form__container form__checkbox-container">
+            <div class="form__add-info-row-container">
+              <input class="form__input form__input-checkbox visually-hidden" type="checkbox" name="add-good" placeholder="Сахарозаменитель" id="add-sweetener" checked>
+              <label class="form__label form__label-checkbox" for="add-sweetener">Сахарозаменитель</label>
+            </div>
+            <div class="form__add-info-row-container">
+              <input class="form__input form__input-checkbox visually-hidden" type="checkbox" name="add-good" placeholder="Питьевая вода" id="add-water">
+              <label class="form__label form__label-checkbox" for="add-water">Питьевая вода</label>
+            </div>
+            <div class="form__add-info-row-container">
+              <input class="form__input form__input-checkbox visually-hidden" type="checkbox" name="add-good" placeholder="Молоко" id="add-milk">
+              <label class="form__label form__label-checkbox" for="add-milk">Молоко</label>
+            </div>
+            <div class="form__add-info-row-container">
+              <input class="form__input form__input-checkbox visually-hidden" type="checkbox" name="add-good" placeholder="Витамины" id="add-vitamins">
+              <label class="form__label form__label-checkbox" for="add-vitamins">Витамины</label>
+            </div>
           </div>
         </fieldset>
         <div class="form__for-indent-wrap">
@@ -98,44 +117,48 @@
           <small class="form__legend">&#42; &mdash; Обязательные поля</small>
         </div>
       </form>
-      <section class="contacts page-main__contacts container">
-        <div class="contacts__content">
-          <h2 class="visually-hidden">Контакты</h2>
-          <p class="contacts__invite-text">
-            Приглашаем
-            к сотрудничеству
-            дилеров!
-          </p>
-          <p class="contacts__address-text">
-            Ул. Большая
-            Конюшенная, д. 19/8
-            Санкт-Петербург
-          </p>
-        </div>
-        <div class="contacts__map">
-          <img src="https://via.placeholder.com/320x362" alt="Карта нашего расположения">
+      <section class="contacts contacts--bg">
+        <div class="container">
+          <div class="contacts__content contacts__content--coordinate">
+            <h2 class="visually-hidden">Контакты</h2>
+            <p class="contacts__invite-text">
+              Приглашаем
+              к сотрудничеству
+              дилеров!
+            </p>
+            <p class="contacts__address-text">
+              Ул. Большая
+              Конюшенная, д. 19/8
+              Санкт-Петербург
+            </p>
+          </div>
+          <div class="contacts__map">
+            <img src="https://via.placeholder.com/320x362" width="100%" alt="Карта нашего расположения">
+          </div>
         </div>
       </section>
     </main>
-    <footer class="page-footer container">
-      <a class="page-footer__logo-link" href="index.html">
-        <img class="page-footer__logo-img" src="https://via.placeholder.com/128x24" alt="Логотип с названием нашей компании">
-      </a>
-      <ul class="list-reset page-footer__socials socials">
-        <li class="socials__item">
-          <a class="link socials__link" href="https://vk.com" aria-label="Мы в Вконтакте" target="_blank">Вконтакте</a>
-        </li>
-        <li class="socials__item">
-          <a class="link socials__link" href="https://instagram.com" aria-label="Мы в Инстрагаме" target="_blank">Инстрагам</a>
-        </li>
-        <li class="socials__item">
-          <a class="link socials__link" href="https://facebook.com" aria-label="Мы в Фейсбуке" target="_blank">Фейсбук</a>
-        </li>
-      </ul>
-      <a class="page-footer__academy-link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
-        <p class="page-footer__academy-text">HTML Academy</p>
-        <img src="https://via.placeholder.com/27x34" alt="Логотип HTML Academy">
-      </a>
+    <footer class="page-footer">
+      <div class="container page-footer__container">
+        <a class="page-footer__logo-link">
+          <img class="page-footer__logo-img" src="https://via.placeholder.com/128x24" alt="Логотип с названием нашей компании">
+        </a>
+        <ul class="list-reset page-footer__socials socials">
+          <li class="socials__item">
+            <a class="socials__link link" href="https://vk.com" aria-label="Мы в Вконтакте" target="_blank">Вконтакте</a>
+          </li>
+          <li class="socials__item">
+            <a class="socials__link link" href="https://instagram.com" aria-label="Мы в Инстрагаме" target="_blank">Инстрагам</a>
+          </li>
+          <li class="socials__item">
+            <a class="socials__link link" href="https://facebook.com" aria-label="Мы в Фейсбуке" target="_blank">Фейсбук</a>
+          </li>
+        </ul>
+        <a class="page-footer__academy-link link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
+          <p class="page-footer__academy-text">HTML Academy</p>
+          <img src="https://via.placeholder.com/27x34" alt="Логотип HTML Academy">
+        </a>
+      </div>
     </footer>
   </body>
 </html>
