@@ -6,10 +6,12 @@ $base-font: "Oswald", $add-font;
 // Colors
 
 $special-dark-grey: #444444;
+$special-dark-grey-trans: rgba(68, 68, 68, 0.3);
 $basic-green: #68b738;
 $basic-green-2: #5eaa2f;
 $basic-grey: #f2f2f2;
 $special-grey: #cdcdcd;
+$special-grey-2: #ebebeb;
 $special-dim-grey: #666666;
 $basic-white: #ffffff;
 $basic-shadow-white: rgba(255, 255, 255, 0.3);
@@ -25,6 +27,7 @@ $special-light-whisper: #e6e6e6;
 $special-lighten-whisper: #e7e7e7;
 $special-darker-whisper: #eaeaea;
 $very-light-grey: #cdcdcd;
+$light-grey: #d3d3d3;
 $status-error: #ff8282;
 $darker-silver: #bababa;
 

@@ -1,3 +1,21 @@
+.catalog-list__item {
+  border-top: 1px solid $special-grey-2;
+  padding-top: 8px;
+  padding-bottom: 11px;
+}
+
+.catalog-list__item-conteiner {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 13px;
+}
+
+.catalog-list__item-inner-container {
+  display: flex;
+  flex-direction: column;
+}
+
 .catalog-list__title {
   font-weight: 400;
   font-size: 16px;
@@ -6,6 +24,15 @@
   color: $special-nero;
 
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    line-height: 21px;
+  }
 }
 
 .catalog-list__table-row {
@@ -13,20 +40,65 @@
   font-size: 12px;
   line-height: 16px;
   color: $special-dark-grey;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+  }
 }
 
 .catalog-list__button {
   font-family: $base-font;
   font-size: 16px;
-  line-height: 16px;
+  line-height: 20px;
   text-transform: uppercase;
   color: $basic-white;
+  text-align: center;
 
   background-color: $basic-green;
+
+  display: block;
+  width: 100%;
+  padding: 10px 10px;
+
+  &:hover {
+    background-color: $basic-green-2;
+  }
+
+  &:active {
+    background-color: $basic-green-2;
+    color: $basic-shadow-white;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 248px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 168px;
+  }
 }
 
 .catalog-list__show-more-block {
-  padding-top: 40px;
+  border-top: 1px solid $special-grey-2;
+  border-bottom: 1px solid $special-grey-2;
+  padding-top: 78px;
+  padding-bottom: 25px;
+  position: relative;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    background-color: $light-grey;
+    width: 2px;
+    height: 30px;
+    left: 50%;
+    top: 25px;
+  }
+
+  &::before {
+    transform: rotate(90deg);
+  }
 }
 
 .catalog-list__show-more-text {
@@ -34,9 +106,16 @@
   line-height: 20px;
   text-transform: uppercase;
   color: $special-black;
+  text-align: center;
 
   margin: 0;
+  margin-bottom: 8px;
   padding: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 22px;
+  }
 }
 
 .catalog-list__bottom-text {
@@ -44,6 +123,16 @@
   font-size: 12px;
   line-height: 16px;
   color: $special-dark-grey;
+  text-align: center;
+
+  margin: 0;
+  margin-bottom: 21px;
+  padding: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 18px;
+  }
 }
 
 .catalog-list__show-more-button {
@@ -51,6 +140,27 @@
   line-height: 16px;
   color: $special-dark-grey;
   text-transform: uppercase;
+  text-align: center;
 
   background-color: $basic-grey;
+
+  display: block;
+  width: 100%;
+  padding: 20px 15px;
+
+  &:hover {
+    background-color: $special-grey-2;
+  }
+
+  &:active {
+    color: $special-dark-grey-trans;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 249px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 169px;
+  }
 }

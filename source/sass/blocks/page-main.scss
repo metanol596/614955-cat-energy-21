@@ -83,6 +83,15 @@
   }
 }
 
-.page-main__catalog-page-title {
-  margin-bottom: 49px;
+.page-main__catalog-page-title-container {
+  padding-top: 27px;
+  padding-bottom: 41px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 83px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 84px;
+  }
 }
