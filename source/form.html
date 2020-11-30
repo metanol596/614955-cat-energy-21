@@ -45,7 +45,7 @@
       </div>
       <form class="page-main__form form container" action="https://echo.htmlacademy.ru" method="POST">
         <div class="form__wrap">
-          <fieldset class="form__container form__text-input-container">
+          <div class="form__container form__text-input-container">
             <div class="form__text-input-row-container">
               <label class="form__label form__text-input-label">Имя:&#42;</label>
               <input class="form__input" type="text" name="cat-name" id="cat-name-id" placeholder="Барсик" required>
@@ -54,12 +54,12 @@
               <label class="form__label form__text-input-label">Вес&nbsp;(кг):&#42;</label>
               <input class="form__input" type="text" name="cat-weight" id="cat-weight-id" placeholder="7" required>
             </div>
-            <div class="form__text-input-row-container">
+            <div class="form__text-input-row-container form__text-input-row-container--null-indent">
               <label class="form__label form__text-input-label">Возраст&nbsp;(лет):</label>
               <input class="form__input" type="text" name="cat-age" id="cat-age-id" placeholder="7">
             </div>
-          </fieldset>
-          <fieldset class="form__container form__radio-container">
+          </div>
+          <div class="form__container form__radio-container">
             <div class="form__radio-row-container">
               <input class="form__input form__input-radio visually-hidden" type="radio" name="goal" id="slimming-id" placeholder="Похудение" checked>
               <label class="form__label form__label-radio" for="slimming-id">Похудение</label>
@@ -68,11 +68,11 @@
               <input class="form__input form__input-radio visually-hidden" type="radio" name="goal" id="weight-gain-id" placeholder="Набор массы">
               <label class="form__label form__label-radio" for="weight-gain-id">Набор массы</label>
             </div>
-            <div class="form__radio-row-container">
+            <div class="form__radio-row-container form__radio-row-container--null-indent">
               <input class="form__input form__input-radio visually-hidden" type="radio" name="goal" id="advice-id" placeholder="Совет">
               <label class="form__label form__label-radio" for="advice-id">Не знаю (Нужен ваш совет)</label>
             </div>
-          </fieldset>
+          </div>
         </div>
         <fieldset class="form__container form__contacts">
           <legend class="form__section-title form__section-title--contacts-block-size">Контактные данные (владельца кота)</legend>
@@ -119,7 +119,7 @@
       </form>
       <section class="contacts contacts--bg">
         <div class="container">
-          <div class="contacts__content">
+          <div class="contacts__content contacts__content--coordinate">
             <h2 class="visually-hidden">Контакты</h2>
             <p class="contacts__invite-text">
               Приглашаем
@@ -133,7 +133,7 @@
             </p>
           </div>
           <div class="contacts__map">
-            <img class="contacts__map-img" src="https://via.placeholder.com/320x362" alt="Карта нашего расположения">
+            <img src="https://via.placeholder.com/320x362" width="100%" alt="Карта нашего расположения">
           </div>
         </div>
       </section>

@@ -7,13 +7,14 @@
   @media (min-width: $desktop-width) {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 65px;
+    width: 1220px;
+    margin-bottom: 69px;
   }
 }
 
 .form__text-input-container {
   border: none;
-  margin-bottom: 13px;
+  margin-bottom: 27px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 52px;
@@ -43,8 +44,8 @@
   @media (min-width: $desktop-width) {
     width: 569px;
     margin-bottom: 0;
-    padding-top: 21px;
-    padding-bottom: 0;
+    padding-top: 29px;
+    padding-bottom: 29px;
   }
 }
 
@@ -94,7 +95,13 @@
 
 .form__radio-row-container {
   @media (min-width: $tablet-width) {
-    margin-bottom: 23px;
+    margin-bottom: 25px;
+  }
+
+  &--null-indent {
+    @media (min-width: $desktop-width) {
+      margin-bottom: 0;
+    }
   }
 }
 
@@ -106,6 +113,10 @@
 
   @media (min-width: $desktop-width) {
     width: 569px;
+
+    &--null-indent {
+      margin-bottom: 0;
+    }
   }
 }
 
@@ -156,7 +167,7 @@
 .form__input[type="tel"],
 .form__feedback-comment-field {
   border: 1px solid $special-lighten-whisper;
-  padding: 13px 10px 14px 16px;
+  padding: 17px 10px 17px 16px;
   width: 100%;
 
   &:hover {
