@@ -1,27 +1,18 @@
 .review {
   background-color: $special-darker-whisper;
 
+  padding-top: 27px;
   padding-bottom: 25px;
 
   @media (min-width: $tablet-width) {
     background-size: 768px 462px;
 
-    padding-bottom: 67px;
-  }
-}
-
-.review__title-wrap {
-  padding-top: 27px;
-  padding-bottom: 33px;
-
-  @media (min-width: $tablet-width) {
     padding-top: 43px;
-    padding-bottom: 63px;
+    padding-bottom: 67px;
   }
 
   @media (min-width: $desktop-width) {
     padding-top: 58px;
-    padding-bottom: 76px;
   }
 }
 
@@ -31,11 +22,18 @@
   line-height: 40px;
 
   margin: 0;
+  margin-bottom: 33px;
   padding: 0;
 
   @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 60px;
+
+    margin-bottom: 63px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 76px;
   }
 }
 
