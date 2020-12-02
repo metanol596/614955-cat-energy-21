@@ -39,6 +39,7 @@
     padding-bottom: 9px;
     margin-right: 35px;
     min-width: auto;
+    color: $base-black;
 
     &--current {
       border-bottom: 2px solid $basic-green;
@@ -72,6 +73,10 @@
       color: $base-black;
     }
 
+    &--catalog-color {
+      color: $base-black;
+    }
+
     background-color: transparent;
 
     &--current {
@@ -89,6 +94,20 @@
     }
 
     &--form-color-current {
+      border-bottom: 2px solid $basic-green;
+
+      &:hover {
+        opacity: 0.6;
+        border-bottom: 2px solid $base-black;
+      }
+
+      &:active {
+        opacity: 0.3;
+        border-bottom: 2px solid $base-black;
+      }
+    }
+
+    &--catalog-color-current {
       border-bottom: 2px solid $basic-green;
 
       &:hover {
