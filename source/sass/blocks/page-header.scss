@@ -5,8 +5,8 @@
     url("../../img/promo-cat-b-img.png");
   background-size:
     280px 270px,
-    320px 302px,
-    320px 302px;
+    100vw 302px,
+    563px 302px;
   background-position:
     center 434px,
     center 267px,
@@ -35,12 +35,12 @@
       url("../../img/promo-cat-b-img-desk.png");
     background-size:
       552px 499px,
-      720px 694px,
+      720px 696px,
       1044px 696px;
     background-position:
-      558px 141px,
-      100% 0,
-      182% 0;
+      63% 141px,
+      right -2px,
+      182% -2px;
     background-repeat: no-repeat;
   }
 }
@@ -48,10 +48,15 @@
 .page-header__upper-row-wrap {
   background-color: $basic-white;
 
+  @media (max-width: $mobile-width-only) {
+
+  }
+
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
     padding-top: 24px;
+    width: 100%;
   }
 
   @media (min-width: $desktop-width) {
