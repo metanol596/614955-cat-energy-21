@@ -4,6 +4,7 @@
   align-items: center;
   justify-content: space-between;
   min-height: 480px;
+  margin-bottom: 22px;
 
   @media (min-width: $tablet-width) {
     padding-top: 35px;
@@ -89,7 +90,7 @@
   background-color: $basic-green;
 
   width: 100%;
-  padding: 12px 15px;
+  padding: 11px 15px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;

@@ -5,10 +5,10 @@
 .page-footer__container {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
   padding-top: 39px;
-  padding-bottom: 22px;
+  padding-bottom: 11px;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
@@ -16,16 +16,45 @@
 }
 
 .page-footer__logo-link {
-  padding-bottom: 32px;
+  margin-bottom: 26px;
 }
 
 .page-footer__socials {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 280px;
   padding-top: 20px;
-  padding-bottom: 21px;
+  padding-bottom: 11px;
+  border-top: 1px solid $special-gainsboro;
+  border-bottom: 1px solid $special-gainsboro;
+}
+
+.page-footer__socials-item {
+  margin-right: 36px;
+  margin-bottom: 10px;
+}
+
+.page-footer__socials-item--null-indent {
+  margin-right: 0;
+}
+
+.page-footer__socials-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .page-footer__academy-link {
-  padding-top: 22px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 280px;
+  margin-bottom: 22px;
+  padding-top: 21px;
 }
 
 .page-footer__academy-text {

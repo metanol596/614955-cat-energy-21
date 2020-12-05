@@ -2,7 +2,6 @@
   background-color: $special-darker-whisper;
 
   padding-top: 27px;
-  padding-bottom: 25px;
 
   @media (min-width: $tablet-width) {
     background-size: 768px 462px;
@@ -17,6 +16,8 @@
 }
 
 .review__container {
+  padding-bottom: 35px;
+
   @media (max-width: $mobile-width-only), (min-width: $tablet-width) {
     width: 100%;
   }
@@ -63,6 +64,7 @@
   margin: 0;
   margin-bottom: 25px;
   padding: 0;
+  width: 279px;
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
@@ -93,20 +95,24 @@
 
 .review__desc-list {
   margin: 0;
-  margin-bottom: 25px;
+  margin-bottom: 18px;
   padding: 0;
   display: flex;
   justify-content: space-between;
-  max-width: 280px;
+  width: 280px;
 }
 
 .review__cell-wrap {
+  width: 127px;
+
   text-align: center;
+
+  background-image: url("../../img/back-border-icon.svg");
+  background-repeat: no-repeat;
+
 }
 
 .review__cell-wrap--indent {
-  margin-right: 31px;
-
   @media (min-width: $tablet-width) {
     margin-right: 42px;
   }
@@ -115,8 +121,10 @@
 .review__term {
   font-size: 24px;
   line-height: 24px;
+  text-transform: uppercase;
 
-  margin-bottom: 12px;
+  margin-bottom: 11px;
+  padding-top: 14px;
 
   @media (min-width: $tablet-width) {
     font-size: 30px;
@@ -131,6 +139,7 @@
   color: $special_dark-grey;
 
   margin: 0;
+  margin-left: 20px;
   padding: 0;
   width: 85px;
 
@@ -194,13 +203,13 @@
 }
 
 .review__slider-item {
-  margin-bottom: 23px;
+  margin-bottom: 25px;
 }
 
 .review__slider-inner-container {
   display: flex;
   justify-content: space-between;
-  width: 195px;
+  width: 209px;
   margin: auto;
 
   @media (min-width: $tablet-width) {

@@ -10,7 +10,7 @@
   background-position:
     center 434px,
     center 267px,
-    center 267px;
+    -155px 267px;
   background-repeat: no-repeat;
 
   @media (min-width: $tablet-width) {
@@ -48,6 +48,10 @@
 .page-header__upper-row-wrap {
   background-color: $basic-white;
 
+  @media (max-width: $mobile-width-only) {
+    width: 100%;
+  }
+
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
@@ -62,12 +66,19 @@
 
 .page-header__upper-inner-wrap {
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
+  align-items: center;
   min-height: 66px;
 }
 
+.page-header__logo-link {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
 .page-header__logo-icon {
-  margin-right: 56px;
+  margin-right: 57px;
 
   @media (min-width: $tablet-width) {
     margin-right: 0;

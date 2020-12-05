@@ -42,7 +42,10 @@
 }
 
 .features__title-wrap {
-  padding-bottom: 29px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding-bottom: 18px;
 
   @media (min-width: $tablet-width) {
     padding-bottom: 24px;
@@ -53,6 +56,17 @@
   }
 }
 
+.features__cat-icon {
+  position: absolute;
+  left: 2px;
+  top: 0;
+}
+
+.features__cat-icon--indent {
+  left: -7px;
+  top: 3px;
+}
+
 .features__title {
   font-weight: 400;
   font-size: 24px;
@@ -60,8 +74,11 @@
   text-transform: uppercase;
 
   margin: 0;
-  margin-bottom: 29px;
+  margin-bottom: 11px;
   padding: 0;
+  align-self: center;
+  padding-top: 9px;
+  padding-left: 71px;
 
   @media (min-width: $tablet-width) {
     font-size: 36px;
@@ -83,7 +100,9 @@
 
   margin: 0;
   padding: 0;
-  margin-bottom: 38px;
+  padding-bottom: 22px;
+  margin-bottom: 15px;
+  border-bottom: 1px solid $special-gainsboro;
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
@@ -115,4 +134,8 @@
       opacity: 0.3;
     }
   }
+}
+
+.features__arrow-icon-container {
+  margin-left: 12px;
 }

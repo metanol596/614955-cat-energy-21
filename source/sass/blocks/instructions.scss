@@ -10,7 +10,7 @@
   line-height: 40px;
 
   margin: 0;
-  margin-bottom: 38px;
+  margin-bottom: 40px;
   padding: 0;
 
   @media (min-width: $tablet-width) {
@@ -35,6 +35,9 @@
 }
 
 .instructions__item {
+  position: relative;
+  margin-bottom: 26px;
+
   @media (min-width: $tablet-width) {
     position: relative;
     min-height: 280px;
@@ -62,8 +65,13 @@
   }
 }
 
-.instructions__item--indent {
-  margin-bottom: 20px;
+.instructions__item--null-indent {
+  margin-bottom: 4px;
+}
+
+.instructions__icon {
+  position: absolute;
+  top: -2px;
 }
 
 .instructions__text {
@@ -74,6 +82,7 @@
 
   margin: 0;
   padding: 0;
+  padding-left: 80px;
 
   @media (min-width: $tablet-width) {
     width: 245px;
