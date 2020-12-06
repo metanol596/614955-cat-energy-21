@@ -100,6 +100,14 @@
       right: 15px;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 103px;
+
+    &::after {
+      right: -8px;
+    }
+  }
 }
 
 .instructions__item--tub {
@@ -114,6 +122,14 @@
       background-image: url("../../img/tub-big-icon.svg");
     }
   }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 102px;
+  }
+
+  &::after {
+    right: -23px;
+  }
 }
 
 .instructions__item--eat {
@@ -126,6 +142,14 @@
 
     &::before {
       background-image: url("../../img/eat-big-icon.svg");
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 104px;
+
+    &::after {
+      right: -25px;
     }
   }
 }
@@ -165,6 +189,12 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 201px;
+    width: 222px;
+  }
+}
+
+.instructions__text--alarm {
+  @media (min-width: $desktop-width) {
+    width: 245px;
   }
 }

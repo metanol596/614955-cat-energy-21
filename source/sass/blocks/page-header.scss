@@ -18,24 +18,39 @@
   @media (min-width: $tablet-width) {
     background-image: url("../../img/promo-good-b-img-tablet.png");
     background-repeat: no-repeat;
-    background-size: 709px 609px;
     background-position: center 341px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/promo-good-b-img-tablet@2x.png");
+      background-size: 1418px 1218px;
+    }
   }
 
   @media (min-width: $desktop-width) {
     background-image:
       url("../../img/promo-good-b-img-desk.png"),
       url("../../img/promo-trans-b.png"),
-      url("../../img/promo-cat-b-img-desk.png");
+      url("../../img/index-background-desktop-1.png");
     background-size:
       552px 499px,
-      720px 696px,
-      1044px 696px;
+      720px 694px,
+      720px 694px;
     background-position:
       63% 141px,
-      right -2px,
-      182% -2px;
+      right 0,
+      right 0;
     background-repeat: no-repeat;
+
+    @media (min-resolution: 2dppx) {
+      background-image:
+        url("../../img/promo-good-b-img-desk@2x.png"),
+        url("../../img/Rectangle-17@2x.png"),
+        url("../../img/index-background-desktop-1@2x.png");
+      background-size:
+        1104px 998px,
+        1440px 1388px,
+        1440px 1388px;
+    }
   }
 }
 
@@ -55,6 +70,8 @@
 
   @media (min-width: $desktop-width) {
     background-color: transparent;
+
+    padding-top: 47px;
   }
 }
 
