@@ -1,31 +1,25 @@
 .page-header--bg {
-  background-image:
-    url("../../img/promo-good-b-img.png"),
-    url("../../img/promo-trans-b.png"),
-    url("../../img/promo-cat-b-img.png");
-  background-size:
-    280px 270px,
-    100vw 302px,
-    563px 302px;
-  background-position:
-    center 434px,
-    center 267px,
-    -155px 267px;
-  background-repeat: no-repeat;
+  @media (max-width: $mobile-width-only) {
+    background-image:
+      url("../../img/promo-good-b-img.png"),
+      url("../../img/promo-trans-b.png"),
+      url("../../img/promo-cat-b-img.png");
+    background-size:
+      280px 270px,
+      100vw 302px,
+      563px 302px;
+    background-position:
+      center 233px,
+      center 66px,
+      center 66px;
+    background-repeat: no-repeat;
+  }
 
   @media (min-width: $tablet-width) {
-    background-image:
-      url("../../img/promo-good-b-img-tablet.png"),
-      none,
-      none;
-    background-size:
-      709px 609px,
-      0 0,
-      0 0;
-    background-position:
-      center 341px,
-      0 0,
-      0 0;
+    background-image: url("../../img/promo-good-b-img-tablet.png");
+    background-repeat: no-repeat;
+    background-size: 709px 609px;
+    background-position: center 341px;
   }
 
   @media (min-width: $desktop-width) {
@@ -48,14 +42,14 @@
 .page-header__upper-row-wrap {
   background-color: $basic-white;
 
+  position: relative;
+
   @media (max-width: $mobile-width-only) {
     width: 100%;
   }
 
   @media (min-width: $tablet-width) {
-    display: flex;
-    justify-content: space-between;
-    padding-top: 24px;
+    padding-top: 18px;
     width: 100%;
   }
 
@@ -75,22 +69,66 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
+
+  @media (min-width: $tablet-width) {
+    &:hover {
+      opacity: 0.8;
+    }
+
+    &:active {
+      opacity: 0.6;
+    }
+  }
 }
 
 .page-header__logo-icon {
   margin-right: 57px;
 
   @media (min-width: $tablet-width) {
-    margin-right: 0;
+    display: none;
+  }
+}
+
+.page-header__logo-brand {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.page-header__logo-tablet-icon {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
   }
 }
 
 .page-header__toggle {
-  background-color: $basic-white;
+  background-color: transparent;
+  cursor: pointer;
+  outline-offset: 10px;
 
   border: none;
+  position: absolute;
+  width: 25px;
+  height: 18px;
+  z-index: 10;
+  right: 22px;
+  top: 17px;
 
   @media (min-width: $tablet-width) {
     display: none;
+  }
+}
+
+.page-header__toggle--closed {
+  &::before {
+    content: "|||";
+    position: absolute;
+    width: 24px;
+    height: 16px;
+    transform: rotate(90deg);
+
+    font-size: 28px;
   }
 }

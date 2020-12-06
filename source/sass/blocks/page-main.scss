@@ -11,7 +11,11 @@
 }
 
 .page-main__instructions {
-  margin-bottom: 42px;
+  margin-bottom: 21px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 10px;
+  }
 
   @media (min-width: $desktop-width) {
     margin-bottom: 0;

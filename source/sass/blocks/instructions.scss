@@ -26,9 +26,9 @@
   flex-direction: column;
 
   @media (min-width: $tablet-width) {
-    flex-wrap: wrap;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-start;
+    flex-wrap: wrap;
 
     counter-reset: section;
   }
@@ -38,10 +38,29 @@
   position: relative;
   margin-bottom: 26px;
 
+  &::before {
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 60px;
+
+    background-repeat: no-repeat;
+    background-size: 60px 60px;
+  }
+
   @media (min-width: $tablet-width) {
     position: relative;
     min-height: 280px;
     padding-top: 151px;
+    margin-bottom: 37px;
+
+    &::before {
+      width: 80px;
+      height: 80px;
+      top: 40px;
+
+      background-size: 80px 80px;
+    }
 
     @media (min-width: $tablet-width) {
       &::after {
@@ -65,13 +84,66 @@
   }
 }
 
-.instructions__item--null-indent {
-  margin-bottom: 4px;
+.instructions__item--leaf {
+  &::before {
+    background-image: url("../../img/leaf-icon.svg");
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-right: 139px;
+
+    &::before {
+      background-image: url("../../img/leaf-big-icon.svg");
+    }
+
+    &::after {
+      right: 15px;
+    }
+  }
 }
 
-.instructions__icon {
-  position: absolute;
-  top: -2px;
+.instructions__item--tub {
+  &::before {
+    background-image: url("../../img/tub-icon.svg");
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-right: 79px;
+
+    &::before {
+      background-image: url("../../img/tub-big-icon.svg");
+    }
+  }
+}
+
+.instructions__item--eat {
+  &::before {
+    background-image: url("../../img/eat-icon.svg");
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-right: 139px;
+
+    &::before {
+      background-image: url("../../img/eat-big-icon.svg");
+    }
+  }
+}
+
+.instructions__item--alarm {
+  &::before {
+    background-image: url("../../img/alarm-icon.svg");
+  }
+
+  @media (min-width: $tablet-width) {
+    &::before {
+      background-image: url("../../img/alarm-big-icon.svg");
+    }
+
+    &::after {
+      right: -3px;
+    }
+  }
 }
 
 .instructions__text {
@@ -85,7 +157,11 @@
   padding-left: 80px;
 
   @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+
     width: 245px;
+    padding-left: 0;
   }
 
   @media (min-width: $desktop-width) {
