@@ -6,34 +6,18 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 71px;
+    margin-bottom: 74px;
   }
 }
 
 .page-main__instructions {
-  margin-bottom: 42px;
-
-  @media (min-width: $desktop-width) {
-    margin-bottom: 0;
-  }
-}
-
-.page-main__instructions-item {
-  margin-bottom: 20px;
-}
-
-.page-main__review-desc {
-  margin-bottom: 25px;
-}
-
-.page-main__review-desc-list {
-  margin-bottom: 25px;
-}
-
-.page-main__review-text {
-  margin-bottom: 42px;
+  margin-bottom: 22px;
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 10px;
+  }
+
+  @media (min-width: $desktop-width) {
     margin-bottom: 0;
   }
 }

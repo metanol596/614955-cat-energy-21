@@ -1,10 +1,13 @@
 .main-nav__list {
-  display: flex;
-  flex-direction: column;
+  // display: flex;
+  // flex-direction: column;
+  display: none;
 
   @media (min-width: $tablet-width) {
+    display: flex;
     flex-direction: row;
     margin-right: -35px;
+    padding-top: 9px;
   }
 }
 
@@ -39,10 +42,13 @@
     padding-bottom: 9px;
     margin-right: 35px;
     min-width: auto;
+
     color: $base-black;
+    text-transform: uppercase;
 
     &--current {
       border-bottom: 2px solid $basic-green;
+      padding-bottom: 6px;
 
       &:hover {
         opacity: 0.6;
