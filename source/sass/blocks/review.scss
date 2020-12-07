@@ -4,14 +4,14 @@
   padding-top: 27px;
 
   @media (min-width: $tablet-width) {
-    background: linear-gradient(to bottom, #ffffff 619px, $special-darker-whisper 619px);
+    background: linear-gradient(to bottom, $basic-white 619px, $special-darker-whisper 619px);
 
     padding-top: 43px;
     padding-bottom: 34px;
   }
 
   @media (min-width: $desktop-width) {
-    background: linear-gradient(to bottom, #ffffff 167px, $special-darker-whisper 167px);
+    background: linear-gradient(to bottom, $basic-white 167px, $basic-grey 167px);
 
     padding-top: 33px;
     padding-bottom: 40px;
@@ -104,7 +104,7 @@
 
 .review__desc-list {
   margin: 0;
-  margin-bottom: 18px;
+  margin-bottom: 35px;
   padding: 0;
   display: flex;
   justify-content: space-between;
@@ -120,16 +120,13 @@
 }
 
 .review__cell-wrap {
-  width: 127px;
+  width: 124px;
+  border: 1px solid $special-grey;
+  border-radius: 4px;
 
   text-align: center;
 
-  background-image: url("../../img/back-border-icon.svg");
-  background-repeat: no-repeat;
-
   @media (min-width: $tablet-width) {
-    background-image: url("../../img/back-border-big-icon.svg");
-
     width: 162px;
     display: flex;
     flex-direction: column;
@@ -148,12 +145,14 @@
   line-height: 24px;
   text-transform: uppercase;
 
-  margin-bottom: 11px;
+  margin-bottom: -9px;
   padding-top: 14px;
 
   @media (min-width: $tablet-width) {
     font-size: 30px;
     line-height: 37px;
+
+    margin-bottom: 5px;
   }
 }
 
@@ -162,11 +161,15 @@
   font-size: 12px;
   line-height: 12px;
   color: $special_dark-grey;
+  text-transform: lowercase;
+
+  background-color: $special-darker-whisper;
 
   margin: 0;
   margin-left: 20px;
   padding: 0;
-  width: 85px;
+  width: 80px;
+  transform: translateY(18px);
 
   @media (min-width: $tablet-width) {
     font-size: 14px;
@@ -174,6 +177,25 @@
 
     width: 129px;
     margin-left: 0;
+    transform: translateY(6px);
+
+    background-color: $basic-white;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: $basic-grey;
+  }
+}
+
+.review__detail--weight {
+  @media (min-width: $tablet-width) {
+    width: 116px;
+  }
+}
+
+.review__detail--time {
+  @media (min-width: $tablet-width) {
+    width: 142px;
   }
 }
 
@@ -189,6 +211,7 @@
 
   @media (min-width: $desktop-width) {
     width: 327px;
+    padding-top: 17px;
   }
 }
 
@@ -224,7 +247,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    top: 12px;
+    top: 17px;
   }
 }
 
@@ -235,7 +258,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 59px;
+    padding-top: 49px;
   }
 
   @media (min-width: $desktop-width) {
@@ -265,7 +288,7 @@
   margin: auto;
 
   @media (min-width: $tablet-width) {
-    width: 569px;
+    width: 570px;
   }
 
   @media (min-width: $desktop-width) {
@@ -339,6 +362,6 @@
     font-size: 20px;
     line-height: 30px;
 
-    padding: 1px 0 1px 0;
+    padding: 0;
   }
 }

@@ -111,6 +111,7 @@
 
     margin-bottom: 28px;
     border-bottom: none;
+    width: 55%;
   }
 
   @media (min-width: $desktop-width) {
@@ -120,7 +121,7 @@
 
 .features__desc--slim {
   @media (min-width: $tablet-width) {
-    width: 377px;
+    min-width: 377px;
   }
 
   @media (min-width: $desktop-width) {
@@ -130,7 +131,7 @@
 
 .features__desc--pro {
   @media (min-width: $tablet-width) {
-    width: 342px;
+    min-width: 342px;
   }
 
   @media (min-width: $desktop-width) {

@@ -10,7 +10,7 @@
   line-height: 40px;
 
   margin: 0;
-  margin-bottom: 40px;
+  margin-bottom: 38px;
   padding: 0;
 
   @media (min-width: $tablet-width) {
@@ -29,20 +29,30 @@
     flex-direction: row;
     justify-content: flex-start;
     flex-wrap: wrap;
+    margin: 0 auto;
+    width: 768px;
 
     counter-reset: section;
+  }
+
+  @media (min-width: $desktop-width) {
+    justify-content: space-between;
+    margin: 0;
+    width: 1220px;
   }
 }
 
 .instructions__item {
   position: relative;
-  margin-bottom: 26px;
+  margin-bottom: 23px;
+  padding-top: 3px;
 
   &::before {
     content: "";
     position: absolute;
     width: 60px;
     height: 60px;
+    top: 0;
 
     background-repeat: no-repeat;
     background-size: 60px 60px;

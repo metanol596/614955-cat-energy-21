@@ -5,6 +5,7 @@
   justify-content: space-between;
   min-height: 480px;
   margin-bottom: 22px;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     padding-top: 29px;
@@ -18,7 +19,7 @@
 
   @media (min-width: $desktop-width) {
     padding-top: 84px;
-    padding-left: 195px;
+    padding-left: 111px;
     min-height: 664px;
   }
 }
@@ -31,7 +32,7 @@
 
 .page-promo__inner-container {
   @media (min-width: $desktop-width) {
-    margin-left: -6px;
+    margin-left: -256px;
   }
 }
 
@@ -116,5 +117,29 @@
 
       color: $basic-shadow-white;
     }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: -257px;
+  }
+}
+
+.page-promo__img {
+  position: absolute;
+
+  @media (max-width: $mobile-width-only) {
+    bottom: 38px;
+  }
+
+  @media (min-width: $tablet-width) {
+    z-index: -100;
+    right: 29px;
+    bottom: 1px;
+  }
+
+  @media (min-width: $desktop-width) {
+    z-index: 100;
+    right: -1%;
+    top: 29px;
   }
 }
