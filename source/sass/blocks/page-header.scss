@@ -58,9 +58,13 @@
   }
 }
 
-.page-header__upper-row-wrap--mobile-form {
+.page-header__upper-row-wrap--form {
   @media (max-width: $mobile-width-only) {
     border-bottom: 1px solid $special-gainsboro;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-right: 35px;
   }
 }
 

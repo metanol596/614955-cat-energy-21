@@ -1,3 +1,10 @@
+.page-main__container {
+  @media (min-width: $tablet-width) {
+    padding-left: 69px;
+    margin-bottom: 67px;
+  }
+}
+
 .page-main__features {
   margin-bottom: 27px;
 
@@ -35,7 +42,7 @@
     font-size: 60px;
     line-height: 60px;
 
-    margin-top: 65px;
+    margin-top: 57px;
     margin-bottom: 54px;
   }
 
@@ -59,7 +66,7 @@
     line-height: 30px;
 
     width: 323px;
-    margin-bottom: 66px;
+    margin-bottom: 0;
   }
 }
 
