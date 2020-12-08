@@ -46,6 +46,7 @@
 
   @media (min-width: $tablet-width) {
     padding-top: 18px;
+    padding-right: 65px;
     width: 100%;
   }
 
@@ -53,6 +54,13 @@
     background-color: transparent;
 
     padding-top: 47px;
+    padding-right: 110px;
+  }
+}
+
+.page-header__upper-row-wrap--mobile-form {
+  @media (max-width: $mobile-width-only) {
+    border-bottom: 1px solid $special-gainsboro;
   }
 }
 

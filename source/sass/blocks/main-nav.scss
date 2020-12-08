@@ -136,3 +136,13 @@
     }
   }
 }
+
+.main-nav__link--form {
+  @media (min-width: $tablet-width) {
+    margin-right: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 35px;
+  }
+}

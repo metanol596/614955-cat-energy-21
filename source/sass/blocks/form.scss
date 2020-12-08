@@ -14,7 +14,10 @@
 
 .form__text-input-container {
   border: none;
-  margin-bottom: 27px;
+  margin: auto;
+  margin-bottom: 23px;
+  min-width: 280px;
+  width: 80%;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 52px;
@@ -30,8 +33,9 @@
   border-right: none;
   border-top: 1px solid $special-gainsboro;
   border-bottom: 1px solid $special-gainsboro;
-  padding-top: 28px;
-  margin-bottom: 26px;
+  padding-top: 27px;
+  padding-left: 20px;
+  margin-bottom: 17px;
 
   @media (min-width: $tablet-width) {
     border: 1px solid $special-gainsboro;
@@ -50,6 +54,10 @@
 }
 
 .form__contact-container {
+  padding-left: 18px;
+  min-width: 280px;
+  width: 94%;
+
   @media (min-width: $desktop-width) {
     display: flex;
     justify-content: space-between;
@@ -66,7 +74,7 @@
 }
 
 .form__contact-row-container {
-  margin-bottom: 20px;
+  margin-bottom: 11px;
 
   @media (min-width: $tablet-width) {
     width: 631px;
@@ -77,12 +85,9 @@
   }
 }
 
-.form__radio-row-container,
 .form__add-info-row-container {
-  margin-bottom: 25px;
-}
+  margin-bottom: 18px;
 
-.form__add-info-row-container {
   @media (min-width: $tablet-width) {
     min-width: 221px;
     margin-bottom: 42px;
@@ -94,6 +99,8 @@
 }
 
 .form__radio-row-container {
+  margin-bottom: 19px;
+
   @media (min-width: $tablet-width) {
     margin-bottom: 25px;
   }
@@ -133,11 +140,17 @@
 }
 
 .form__text-input-label {
-  margin-right: 15px;
+  margin-right: 14px;
 }
 
 .form__contacts-label {
   margin-right: 12px;
+}
+
+.form__feedback-comment-field-container {
+  min-width: 280px;
+  width: 87px;
+  margin: auto;
 }
 
 .form__input,
@@ -167,7 +180,7 @@
 .form__input[type="tel"],
 .form__feedback-comment-field {
   border: 1px solid $special-lighten-whisper;
-  padding: 17px 10px 17px 16px;
+  padding: 14px 10px 11px 15px;
   width: 100%;
 
   &:hover {
@@ -179,6 +192,14 @@
   }
 }
 
+.form__input[type="email"] {
+  padding: 16px 10px 12px 15px;
+}
+
+.form__input[type="tel"] {
+  padding: 16px 10px 14px 15px;
+}
+
 .form__email-input {
   @media (min-width: $desktop-width) {
     margin-right: 80px;
@@ -187,6 +208,7 @@
 
 .form__feedback-comment-field {
   resize: none;
+  padding: 9px 10px 14px 13px;
 
   @media (min-width: $tablet-width) {
     width: 631px;
@@ -262,7 +284,7 @@
 }
 
 .form__contacts {
-  margin-bottom: 10px;
+  margin-bottom: 14px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 45px;
@@ -274,7 +296,7 @@
 }
 
 .form__feedback {
-  margin-bottom: 23px;
+  margin-bottom: 20px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 65px;
@@ -286,7 +308,7 @@
 }
 
 .form__add-info {
-  margin-bottom: 16px;
+  margin-bottom: 20px;
 }
 
 .form__label-checkbox {
@@ -346,6 +368,7 @@
 
   margin: 0;
   margin-bottom: 35px;
+  padding-left: 19px;
 
   @media (min-width: $tablet-width) {
     font-size: 36px;
@@ -356,7 +379,7 @@
 }
 
 .form__add-info-section-title {
-  margin-bottom: 39px;
+  margin-bottom: 35px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 57px;
@@ -364,7 +387,9 @@
 }
 
 .form__section-title--contacts-block-size {
-  width: 202px;
+  width: 221px;
+  transform: translateY(9px);
+  margin-bottom: 40px;
 
   @media (min-width: $tablet-width) {
     width: 554px;
@@ -372,7 +397,7 @@
 }
 
 .form__section-title--feedback-block-size {
-  width: 143px;
+  width: 161px;
 
   @media (min-width: $tablet-width) {
     width: 220px;
@@ -380,7 +405,7 @@
 }
 
 .form__section-title--add-info-block-size {
-  width: 165px;
+  width: 183px;
 
   @media (min-width: $tablet-width) {
     width: 252px;
@@ -388,6 +413,8 @@
 }
 
 .form__checkbox-container {
+  padding-left: 20px;
+
   @media (min-width: $tablet-width) {
     width: 565px;
     display: flex;
@@ -407,6 +434,9 @@
 .form__for-indent-wrap {
   padding-bottom: 32px;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
   @media (min-width: $tablet-width) {
     text-align: left;
@@ -425,8 +455,9 @@
   background-color: $basic-green;
 
   border: none;
-  width: 280px;
-  padding: 7px 10px;
+  min-width: 280px;
+  width: 87%;
+  padding: 10px 10px;
   margin-bottom: 21px;
 
   &:hover {
