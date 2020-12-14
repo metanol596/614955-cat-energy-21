@@ -66,6 +66,10 @@
   @media (min-width: $tablet-width) {
     padding-right: 35px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 110px;
+  }
 }
 
 .page-header__upper-inner-wrap {

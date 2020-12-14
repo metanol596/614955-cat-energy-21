@@ -3,10 +3,6 @@
 }
 
 .contacts__wrapper {
-  @media (max-width: $mobile-width-only) {
-    width: 100%;
-  }
-
   @media (min-width: $desktop-width) {
     position: relative;
     max-width: 1440px;
@@ -19,8 +15,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 28px;
-  padding-bottom: 26px;
+  padding-top: 33px;
+  padding-bottom: 20px;
 
   @media (min-width: $tablet-width) {
     padding: 0;
@@ -31,9 +27,10 @@
 
   @media (min-width: $desktop-width) {
     position: absolute;
+    width: 570px;
     left: 110px;
     top: 95px;
-    padding: 66px 76px 51px 89px;
+    padding: 66px 88px 51px 77px;
 
     background-color: $basic-white;
   }
@@ -84,6 +81,8 @@
   }
 
   @media (min-width: $desktop-width) {
+    text-align: left;
+
     padding-top: 0;
   }
 }

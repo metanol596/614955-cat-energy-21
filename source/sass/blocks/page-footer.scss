@@ -16,6 +16,11 @@
     padding-top: 55px;
     padding-bottom: 51px;
   }
+
+  @media (min-width: $desktop-width) {
+    max-width: 1440px;
+    width: 100%;
+  }
 }
 
 .page-footer__logo-link {
@@ -24,6 +29,14 @@
   @media (min-width: $tablet-width) {
     margin-bottom: 0;
   }
+}
+
+.page-footer__logo-link:hover .page-footer__logo {
+  opacity: 0.8;
+}
+
+.page-footer__logo-link:active .page-footer__logo {
+  opacity: 0.6;
 }
 
 .page-footer__socials {
@@ -67,6 +80,33 @@
   align-items: center;
 }
 
+.page-footer__social-icon.vk-icon,
+.page-footer__social-icon.inst-icon {
+  fill: $special-dim-grey;
+}
+
+.page-footer__social-icon.fb-icon {
+  stroke: $special-dim-grey;
+}
+
+.page-footer__socials-link:hover .page-footer__social-icon.vk-icon,
+.page-footer__socials-link:hover .page-footer__social-icon.inst-icon {
+  fill: $basic-green;
+}
+
+.page-footer__socials-link:hover .page-footer__social-icon.fb-icon {
+  stroke: $basic-green;
+}
+
+.page-footer__socials-link:active .page-footer__social-icon.vk-icon,
+.page-footer__socials-link:active .page-footer__social-icon.inst-icon {
+  opacity: 0.3;
+}
+
+.page-footer__socials-link:active .page-footer__social-icon.fb-icon {
+  opacity: 0.3;
+}
+
 .vk-icon {
   @media (min-width: $tablet-width) {
     width: 30px;
@@ -94,8 +134,16 @@
   justify-content: space-between;
   align-items: center;
   width: 280px;
-  margin-bottom: 22px;
+  margin-bottom: 11px;
   padding-top: 21px;
+
+  &:hover .page-footer__academy-icon {
+    fill: $basic-green;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 
   @media (min-width: $tablet-width) {
     width: 163px;
@@ -113,4 +161,8 @@
 
   margin: 0;
   padding: 0;
+}
+
+.page-footer__academy-icon {
+  fill: $special-dim-grey;
 }
