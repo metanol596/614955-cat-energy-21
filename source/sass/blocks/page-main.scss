@@ -53,6 +53,22 @@
   }
 }
 
+.page-main__title-container {
+  padding-top: 27px;
+  margin-bottom: 41px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 57px;
+    margin-bottom: 83px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 74px;
+    margin: 0;
+    margin-bottom: 84px;
+  }
+}
+
 .page-main__title {
   font-weight: 400;
   font-size: 36px;
@@ -74,6 +90,10 @@
     margin-top: 73px;
     margin-bottom: 56px;
   }
+}
+
+.page-main__title--catalog {
+  margin: 0;
 }
 
 .page-main__lead {
