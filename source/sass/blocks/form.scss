@@ -441,6 +441,7 @@
 
   margin: 0;
   position: relative;
+  display: inline-flex;
 
   &::before,
   &::after {
@@ -448,16 +449,14 @@
     position: absolute;
     width: 100vw;
     height: 2px;
-    top: 16px;
-
-    @media (min-width: $tablet-width) {
-      top: 22px;
-    }
+    top: 22px;
   }
 
   &::after {
     background-color: $basic-green;
 
+    top: 15px;
+    right: -20px;
     transform: translateX(100%);
   }
 
@@ -470,17 +469,22 @@
     &::before {
       background-color: $basic-green;
 
-      transform: translateX(-100%);
       left: 0;
+      transform: translateX(-100%);
+
+      @media (min-width: $desktop-width) {
+        left: -40px;
+      }
+    }
+
+    &::after {
+      top: 22px;
+      right: -40px;
     }
   }
 
   @media (min-width: $desktop-width) {
     padding-left: 0;
-
-    &::before {
-      left: -40px;
-    }
   }
 }
 
@@ -495,31 +499,13 @@
     margin-bottom: 77px;
 
     &::after {
-      right: 115px;
-    }
-  }
-
-  @media (min-width: $desktop-width) {
-    &::after {
-      right: 55%;
+      right: -42px;
     }
   }
 }
 
 .form__section-title--feedback {
   margin-bottom: 38px;
-
-  &::after {
-    right: 138px;
-
-    @media (min-width: $tablet-width) {
-      right: 63%;
-    }
-
-    @media (min-width: $desktop-width) {
-      right: 82%;
-    }
-  }
 
   @media (min-width: $tablet-width) {
     margin-bottom: 76px;
@@ -529,22 +515,8 @@
 .form__section-title--add-info {
   margin-bottom: 35px;
 
-  &::after {
-    right: 115px;
-  }
-
   @media (min-width: $tablet-width) {
-    &::after {
-      right: 59%;
-    }
-
     margin-bottom: 62px;
-  }
-
-  @media (min-width: $desktop-width) {
-    &::after {
-      right: 79%;
-    }
   }
 }
 

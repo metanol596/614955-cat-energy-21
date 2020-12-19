@@ -2,11 +2,12 @@
   margin-bottom: 25px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 68px;
+    margin-bottom: 70px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 75px;
+    width: 100%;
+    margin-bottom: 77px;
   }
 }
 
@@ -14,27 +15,65 @@
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 60px;
+    grid-template-rows: repeat(4, minmax(511px, 1fr));
+    gap: 59px 60px;
   }
 
   @media (min-width: $desktop-width) {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4, 245px);
+    grid-template-rows: repeat(2, minmax(511px, 1fr));
     gap: 63px 80px;
   }
 }
 
 .catalog-list__item {
-  border-top: 1px solid $special-grey-2;
   padding-top: 8px;
-  padding-bottom: 11px;
+  padding-bottom: 14px;
+  margin-bottom: 11px;
+  position: relative;
+
+  @media (max-width: $mobile-width-only) {
+    &::before {
+      content: "";
+      position: absolute;
+      width: 100vw;
+      height: 1px;
+      transform: scaleX(2);
+      top: -1px;
+
+      background-color: $special-grey-2;
+    }
+  }
 
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-end;
     align-items: center;
-    border-top: none;
+    margin-bottom: 0;
+    padding-left: 35px;
+    padding-right: 35px;
+    padding-bottom: 40px;
 
-    background-color: $basic-grey;
+    background: linear-gradient(to bottom, $basic-white 81px, $basic-grey 81px);
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 0;
+  }
+}
+
+.catalog-list__item:nth-of-type(7)::after {
+  @media (max-width: $mobile-width-only) {
+    content: "";
+    position: absolute;
+    width: 100vw;
+    height: 1px;
+    transform: scaleX(2);
+    bottom: -11px;
+
+    background-color: $special-grey-2;
   }
 }
 
@@ -42,25 +81,35 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin-bottom: 13px;
+  margin-bottom: 22px;
 
   @media (min-width: $tablet-width) {
     flex-direction: column;
     align-items: center;
     width: 100%;
+    margin-bottom: 25px;
   }
 }
 
 .catalog-list__link-img {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 171px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 34px;
+    margin-bottom: 22px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 46px;
+    margin-bottom: 40px;
   }
+}
+
+.catalog-list__img {
+  max-width: 100%;
+  height: auto;
 }
 
 .catalog-list__item-inner-container {
@@ -68,8 +117,10 @@
   flex-direction: column;
   max-width: 142px;
   width: 100%;
+  padding-top: 12px;
 
   @media (min-width: $tablet-width) {
+    padding-top: 0;
     max-width: 252px;
   }
 
@@ -79,7 +130,7 @@
 }
 
 .catalog-list__link {
-  margin-bottom: 18px;
+  margin-bottom: 14px;
   width: 76px;
 
   @media (min-width: $tablet-width) {
@@ -110,12 +161,6 @@
   }
 }
 
-.catalog-list__table {
-  @media (min-width: $tablet-width) {
-    margin-bottom: 33px;
-  }
-}
-
 .catalog-list__table-row {
   font-family: $add-font;
   font-size: 12px;
@@ -129,7 +174,7 @@
     font-size: 16px;
 
     border-bottom: 1px solid $very-light-grey;
-    margin-bottom: 5px;
+    margin-bottom: 7px;
     padding-bottom: 8px;
   }
 }
@@ -150,7 +195,7 @@
 
   display: block;
   width: 100%;
-  padding: 10px 10px;
+  padding: 10px 10px 9px;
 
   &:hover {
     background-color: $basic-green-2;
@@ -171,8 +216,26 @@
 }
 
 .catalog-list__show-more-block {
-  border-top: 1px solid $special-grey-2;
-  border-bottom: 1px solid $special-grey-2;
+  position: relative;
+
+  @media (max-width: $mobile-width-only) {
+    &::after {
+      content: "";
+      position: absolute;
+      width: 100vw;
+      height: 1px;
+      transform: scaleX(2);
+
+      background-color: $special-grey-2;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    top: 81px;
+  }
+}
+
+.catalog-list__show-more-block-inner-container {
   padding-top: 78px;
   padding-bottom: 25px;
   position: relative;
@@ -197,7 +260,7 @@
     flex-direction: column;
     align-items: center;
     border: 1px solid $special-grey-2;
-    padding-top: 161px;
+    padding-top: 163px;
     padding-bottom: 38px;
 
     &::before,
@@ -223,7 +286,7 @@
     font-size: 20px;
     line-height: 22px;
 
-    margin-bottom: 23px;
+    margin-bottom: 24px;
     width: 134px;
   }
 }
@@ -259,7 +322,7 @@
 
   display: block;
   width: 100%;
-  padding: 20px 15px;
+  padding: 13px 15px 11px;
 
   &:hover {
     background-color: $special-grey-2;
