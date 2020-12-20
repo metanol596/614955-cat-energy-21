@@ -7,21 +7,21 @@
     background: linear-gradient(to bottom, $basic-white 619px, $special-darker-whisper 619px);
 
     padding-top: 43px;
-    padding-bottom: 34px;
+    padding-bottom: 32px;
   }
 
   @media (min-width: $desktop-width) {
     background: linear-gradient(to bottom, $basic-white 167px, $basic-grey 167px);
 
     padding-top: 33px;
-    padding-bottom: 40px;
+    padding-bottom: 37px;
   }
 }
 
 .review__container {
   padding-bottom: 35px;
 
-  @media (max-width: $mobile-width-only), (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
     width: 100%;
   }
 }
@@ -68,13 +68,13 @@
   margin: 0;
   margin-bottom: 25px;
   padding: 0;
-  width: 279px;
+  width: 280px;
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 24px;
 
-    width: 100%;
+    width: 697px;
     margin-bottom: 54px;
   }
 
@@ -270,7 +270,7 @@
 }
 
 .review__slider-item {
-  margin-bottom: 25px;
+  margin-bottom: 27px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 10px;
@@ -342,6 +342,7 @@
     left: -15px;
 
     background-color: $basic-green;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.16);
   }
 }
 
@@ -363,5 +364,14 @@
     line-height: 30px;
 
     padding: 0;
+    border-bottom: 1px dotted rgba(0, 0, 0, 0.24);
+
+    &:hover {
+      border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+    }
+
+    &:active {
+      border-bottom: none;
+    }
   }
 }
