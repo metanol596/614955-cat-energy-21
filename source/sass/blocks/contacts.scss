@@ -15,8 +15,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 33px;
-  padding-bottom: 20px;
+  padding-top: 27px;
+  padding-bottom: 27px;
 
   @media (min-width: $tablet-width) {
     padding: 0;
@@ -30,7 +30,7 @@
     width: 570px;
     left: 110px;
     top: 95px;
-    padding: 66px 88px 51px 77px;
+    padding: 66px 88px 61px 77px;
 
     background-color: $basic-white;
   }
@@ -53,7 +53,7 @@
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
-  color: $base-black;
+  color: $special-black;
 
   margin: 0;
   padding: 0;
@@ -101,6 +101,12 @@
   }
 }
 
-.contacts__map {
+.contacts__map-container {
   display: flex;
+}
+
+.contacts__map {
+  @media (min-width: $tablet-width) {
+    height: 400px;
+  }
 }

@@ -1,5 +1,5 @@
 .instructions__container {
-  @media (max-width: $mobile-width-only), (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
     width: 100%;
   }
 }
@@ -73,6 +73,10 @@
     }
 
     @media (min-width: $tablet-width) {
+      &::before {
+        top: 37px;
+      }
+
       &::after {
         counter-increment: section;
         content: counter(section);
@@ -91,6 +95,10 @@
 
   @media (min-width: $desktop-width) {
     padding-top: 151px;
+
+    &::after {
+      right: -22px;
+    }
   }
 }
 
@@ -135,10 +143,6 @@
 
   @media (min-width: $desktop-width) {
     margin-right: 102px;
-  }
-
-  &::after {
-    right: -23px;
   }
 }
 
