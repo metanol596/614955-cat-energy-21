@@ -305,9 +305,12 @@
   }
 }
 
-.form__email-input:disabled + .form__contact-row-container-email-icon,
-.form__tel-input:disabled + .form__contact-row-container-phone-icon {
+.form__email-input:focus + .form__contact-row-container-email-icon {
   stroke: $basic-green;
+}
+
+.form__tel-input:focus + .form__contact-row-container-phone-icon {
+  fill: $basic-green;
 }
 
 .form__feedback-comment-field {
