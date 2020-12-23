@@ -1,3 +1,10 @@
+.contacts {
+  @media (min-width: $desktop-width) {
+    position: relative;
+    padding: 97px 0 105px;
+  }
+}
+
 .contacts--bg {
   background-color: $basic_grey;
 }
@@ -8,6 +15,7 @@
     max-width: 1440px;
     width: 100%;
     margin-left: auto;
+    z-index: 100;
   }
 }
 
@@ -26,7 +34,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    position: absolute;
     width: 570px;
     left: 110px;
     top: 95px;
@@ -106,7 +113,26 @@
 }
 
 .contacts__map {
+  height: 362px;
+
+  background-image: url("../../img/map-mobile.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
   @media (min-width: $tablet-width) {
     height: 400px;
+
+    background-image: url("../../img/map-tablet.jpg");
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+
+    background-image: url("../../img/map-desktop.jpg");
   }
 }
