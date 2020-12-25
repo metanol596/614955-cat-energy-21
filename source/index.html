@@ -130,6 +130,10 @@
         <a class="link page-promo__link" href="form.html">Подобрать программу</a>
         <div class="page-promo__img">
           <picture>
+            <source type="image/webp" media="(min-width: 1440px)" srcset="img/promo-good-b-img-desk.webp 1x, img/promo-good-b-img-desk@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/promo-good-b-img-tablet.webp 1x, img/promo-good-b-img-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/promo-good-b-img.webp 1x, img/promo-good-b-img@2x.webp 2x">
+
             <source media="(min-width: 1440px)" srcset="img/promo-good-b-img-desk.png 1x, img/promo-good-b-img-desk@2x.png 2x">
             <source media="(min-width: 768px)" srcset="img/promo-good-b-img-tablet.png 1x, img/promo-good-b-img-tablet@2x.png 2x">
             <img src="img/promo-good-b-img.png" srcset="img/promo-good-b-img@2x.png 2x" alt="Пример нашей продукции: Cat Energy с курицей 500г">
@@ -243,13 +247,19 @@
               </div>
             </div>
             <div class="review__slider">
-              <div class="review__slider-item">
+              <div class="review__slider-item review__slider-item--active">
                 <picture>
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/cat-fat-big.webp 1x, img/cat-fat@2x-big.webp 2x">
+                  <source type="image/webp" srcset="img/fat-cat.webp 1x, img/fat-cat@2x.webp 2x">
+
                   <source media="(min-width: 768px)" srcset="img/cat-fat-big.png 1x, img/cat-fat@2x-big.png 2x">
                   <img src="img/fat-cat.png" srcset="img/fat-cat@2x.png 2x" alt="Изображение кота до нашего корма">
                 </picture>
               </div>
-              <div class="review__slider-item" style="display: none;">
+              <div class="review__slider-item">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/cat-skinny-big.webp 1x, img/cat-skinny-big@2x.webp 2x">
+                <source type="image/webp" srcset="img/slim-cat.webp 1x, img/slim-cat@2x.webp 2x">
+
                 <source media="(min-width: 768px)" srcset="img/cat-skinny-big.png 1x, img/cat-skinny-big@2x.png 2x">
                 <img src="img/slim-cat.png" srcset="img/slim-cat@2x.png" alt="Изображение кота после нашего корма">
               </div>

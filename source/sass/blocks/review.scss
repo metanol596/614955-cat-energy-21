@@ -270,6 +270,7 @@
 }
 
 .review__slider-item {
+  display: none;
   margin-bottom: 27px;
 
   @media (min-width: $tablet-width) {
@@ -279,6 +280,10 @@
   @media (min-width: $desktop-width) {
     margin-bottom: 27px;
   }
+}
+
+.review__slider-item--active {
+  display: block;
 }
 
 .review__slider-inner-container {
