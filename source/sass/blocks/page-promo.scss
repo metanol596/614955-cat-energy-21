@@ -8,7 +8,7 @@
   position: relative;
 
   @media (min-width: $tablet-width) {
-    padding-top: 29px;
+    padding-top: 13px;
     padding-left: 117px;
     min-height: 872px;
     display: flex;
@@ -18,7 +18,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 84px;
+    padding-top: 35px;
     padding-left: 111px;
     margin-bottom: -2px;
     min-height: 664px;
@@ -56,10 +56,12 @@
     text-align: left;
 
     width: 414px;
+    margin-top: 22px;
     margin-bottom: 41px;
   }
 
   @media (min-width: $desktop-width) {
+    margin-top: 26px;
     margin-bottom: 41px;
   }
 }
@@ -135,12 +137,12 @@
   @media (min-width: $tablet-width) {
     z-index: -100;
     right: 29px;
-    bottom: 1px;
+    bottom: 23px;
   }
 
   @media (min-width: $desktop-width) {
     z-index: 100;
     right: -1%;
-    top: 29px;
+    top: -19px;
   }
 }

@@ -63,7 +63,12 @@
     padding-left: 0;
 
     &::before {
+      top: 24px;
       left: -40px;
+    }
+
+    &::after {
+      top: 24px;
     }
   }
 }

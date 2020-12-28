@@ -1,3 +1,13 @@
+.page-header {
+  @media (min-width: $tablet-width) {
+    margin-bottom: -28px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: -50px;
+  }
+}
+
 .page-header--bg {
   @media (max-width: $mobile-width-only) {
     background-image:
@@ -35,6 +45,32 @@
         url("../../img/promo-trans-b@2x.png"),
         url("../../img/promo-cat-desktop@2x.jpg");
     }
+  }
+}
+
+.page-header--nojs {
+  @media (max-width: $mobile-width-only) {
+    background-position: center bottom 179px, center 265px;
+  }
+}
+
+.page-header__upper-row-container {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0 auto;
+    padding: 24px 30px 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 51px 110px;
+  }
+}
+
+.page-header__upper-row-container--border {
+  @media (max-width: $mobile-width-only) {
+    border-bottom: 1px solid $special-gainsboro;
   }
 }
 
@@ -177,5 +213,11 @@
         0 8px 0 0 $base-black,
         0 16px 0 0 $base-black;
     }
+  }
+}
+
+.page-header__toggle--nojs {
+  @media (max-width: $mobile-width-only) {
+    display: none;
   }
 }

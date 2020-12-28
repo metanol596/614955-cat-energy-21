@@ -73,10 +73,6 @@
     }
 
     @media (min-width: $tablet-width) {
-      &::before {
-        top: 37px;
-      }
-
       &::after {
         counter-increment: section;
         content: counter(section);
@@ -95,6 +91,10 @@
 
   @media (min-width: $desktop-width) {
     padding-top: 151px;
+
+    &::before {
+      top: 38px;
+    }
 
     &::after {
       right: -22px;
