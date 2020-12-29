@@ -152,7 +152,8 @@
   width: 76px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 21px;
+    margin-bottom: 0;
+    padding-bottom: 21px;
     width: 158px;
     align-self: center;
 
