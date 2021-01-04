@@ -247,29 +247,31 @@
               </div>
             </div>
             <div class="review__slider">
-              <div class="review__slider-item review__slider-item--active">
+              <div class="review__slider-item active">
                 <picture>
-                  <source type="image/webp" media="(min-width: 768px)" srcset="img/cat-fat-big.webp 1x, img/cat-fat@2x-big.webp 2x">
-                  <source type="image/webp" srcset="img/fat-cat.webp 1x, img/fat-cat@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/cat-fat.webp 1x, img/cat-fat@2x.webp 2x">
+                  <source type="image/webp" srcset="img/fat-cat-mobile.webp 1x, img/fat-cat-mobile@2x.webp 2x">
 
-                  <source media="(min-width: 768px)" srcset="img/cat-fat-big.png 1x, img/cat-fat@2x-big.png 2x">
-                  <img src="img/fat-cat.png" srcset="img/fat-cat@2x.png 2x" alt="Изображение кота до нашего корма">
+                  <source media="(min-width: 768px)" srcset="img/cat-fat.png 1x, img/cat-fat@2x.png 2x">
+                  <img src="img/fat-cat-mobile.png" srcset="img/fat-cat-mobile@2x 2x" alt="Изображение кота до нашего корма">
                 </picture>
               </div>
               <div class="review__slider-item">
-                <source type="image/webp" media="(min-width: 768px)" srcset="img/cat-skinny-big.webp 1x, img/cat-skinny-big@2x.webp 2x">
-                <source type="image/webp" srcset="img/slim-cat.webp 1x, img/slim-cat@2x.webp 2x">
+                <picture>
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/cat-skinny.webp 1x, img/cat-skinny@2x.webp 2x">
+                  <source type="image/webp" srcset="img/skinny-cat-mobile.webp 1x, img/skinny-cat-mobile@2x.webp 2x">
 
-                <source media="(min-width: 768px)" srcset="img/cat-skinny-big.png 1x, img/cat-skinny-big@2x.png 2x">
-                <img src="img/slim-cat.png" srcset="img/slim-cat@2x.png" alt="Изображение кота после нашего корма">
+                  <source media="(min-width: 768px)" srcset="img/cat-skinny.png 1x, img/cat-skinny@2x.png 2x">
+                  <img src="img/skinny-cat-mobile.png" srcset="img/skinny-cat-mobile@2x.png 2x" alt="Изображение кота после нашего корма">
+                </picture>
               </div>
               <div class="review__slider-inner-container">
-                <button class="review__slider-state review__slider-state--indent" type="button">Было</button>
+                <button class="review__slider-state review__slider-state--indent active" type="button">Было</button>
                 <div class="review__slider-range-control">
                   <div class="review__slider-scale">
                     <input class="review__slider-range visually-hidden" type="range" aria-label="Ползунок">
                   </div>
-                  <div class="review__toggle"></div>
+                  <div class="review__toggle moving"></div>
                 </div>
                 <button class="review__slider-state" type="button">Стало</button>
               </div>
@@ -335,5 +337,6 @@
       </div>
     </footer>
     <script src="js/menu.js"></script>
+    <script src="js/slider.js"></script>
   </body>
 </html>
