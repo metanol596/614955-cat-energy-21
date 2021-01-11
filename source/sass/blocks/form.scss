@@ -293,6 +293,12 @@
   &:focus {
     outline: 2px solid $special-dark-grey;
   }
+
+  &:invalid {
+    &:focus {
+      outline: 2px solid $status-error;
+    }
+  }
 }
 
 .form__input[type="text"] {
@@ -318,6 +324,14 @@
 
 .form__tel-input:focus + .form__contact-row-container-phone-icon {
   fill: $basic-green;
+}
+
+.form__email-input:invalid:focus + .form__contact-row-container-email-icon {
+  stroke: $status-error;
+}
+
+.form__tel-input:invalid:focus + .form__contact-row-container-phone-icon {
+  fill: $status-error;
 }
 
 .form__feedback-comment-field {
