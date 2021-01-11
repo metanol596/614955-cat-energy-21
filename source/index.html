@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Academy: Кэт энерджи</title>
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
   </head>
   <body class="page-body">
     <svg style="display: none;">
@@ -49,10 +49,6 @@
         <line y1="1.25" x2="24" y2="1.25" stroke="black" stroke-width="1.5"/>
         <line y1="9.25" x2="24" y2="9.25" stroke="black" stroke-width="1.5"/>
         <line y1="17.25" x2="24" y2="17.25" stroke="black" stroke-width="1.5"/>
-      </symbol>
-      <symbol viewBox="0 0 24 18" id="close-button-icon">
-        <line y1="-0.75" x2="24.7577" y2="-0.75" transform="matrix(0.686589 -0.727046 0.686589 0.727046 2.00171 20)" stroke="black" stroke-width="1.5"/>
-        <line y1="-0.75" x2="24.7577" y2="-0.75" transform="matrix(0.686589 0.727046 -0.686589 0.727046 1 2)" stroke="black" stroke-width="1.5"/>
       </symbol>
       <symbol viewBox="0 0 24 12" id="arrow-icon">
         <line y1="6" x2="18" y2="6" stroke="black" stroke-width="2"/>
@@ -100,8 +96,8 @@
               <use href="#logo-brand"></use>
             </svg>
             <picture>
-              <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg">
-              <img class="page-header__logo-tablet-icon" src="img/logo-tablet.svg" alt="Логотип нашего магазина">
+              <source media="(min-width: 1440px)" srcset="img/icons/logo-desktop.svg">
+              <img class="page-header__logo-tablet-icon" src="img/icons/logo-tablet.svg" alt="Логотип нашего магазина">
             </picture>
           </a>
           <button class="page-header__toggle page-header__toggle--closed page-header__toggle--nojs" aria-label="Открыть / Закрыть меню"></button>
@@ -336,7 +332,7 @@
         </a>
       </div>
     </footer>
-    <script src="js/menu.js"></script>
-    <script src="js/slider.js"></script>
+    <script src="js/menu.min.js"></script>
+    <script src="js/slider.min.js"></script>
   </body>
 </html>
