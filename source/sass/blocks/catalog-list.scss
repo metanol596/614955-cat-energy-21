@@ -38,12 +38,13 @@
     font-size: 60px;
     line-height: 60px;
 
-    margin-top: 57px;
+    margin-top: 58px;
     margin-bottom: 83px;
   }
 
   @media (min-width: $desktop-width) {
     margin-top: 75px;
+    margin-bottom: 85px;
   }
 }
 
@@ -151,7 +152,8 @@
   width: 76px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 21px;
+    margin-bottom: 0;
+    padding-bottom: 21px;
     width: 158px;
     align-self: center;
 

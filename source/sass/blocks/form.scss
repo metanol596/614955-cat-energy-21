@@ -193,8 +193,15 @@
     margin-bottom: 20px;
 
     &-email-icon {
-      width: 18px;
-      height: 13px;
+      width: 27px;
+      height: 16px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &-email-icon {
+      width: 32px;
+      height: 16px;
     }
   }
 }
@@ -286,6 +293,12 @@
   &:focus {
     outline: 2px solid $special-dark-grey;
   }
+
+  &:invalid {
+    &:focus {
+      outline: 2px solid $status-error;
+    }
+  }
 }
 
 .form__input[type="text"] {
@@ -311,6 +324,14 @@
 
 .form__tel-input:focus + .form__contact-row-container-phone-icon {
   fill: $basic-green;
+}
+
+.form__email-input:invalid:focus + .form__contact-row-container-email-icon {
+  stroke: $status-error;
+}
+
+.form__tel-input:invalid:focus + .form__contact-row-container-phone-icon {
+  fill: $status-error;
 }
 
 .form__feedback-comment-field {

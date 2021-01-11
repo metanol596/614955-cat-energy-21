@@ -151,6 +151,19 @@
   }
 }
 
+.features__link:hover .features__arrow-icon-container {
+  transform: scaleX(1.2);
+  margin-left: 15px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 22px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 26px;
+  }
+}
+
 .features__arrow-icon-container {
   margin-left: 12px;
 

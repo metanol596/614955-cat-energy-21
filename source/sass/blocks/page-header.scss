@@ -1,3 +1,13 @@
+.page-header {
+  @media (min-width: $tablet-width) {
+    margin-bottom: -28px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: -50px;
+  }
+}
+
 .page-header--bg {
   @media (max-width: $mobile-width-only) {
     background-image:
@@ -38,63 +48,89 @@
   }
 }
 
-.page-header__upper-row-wrap {
-  background-color: $basic-white;
-
-  position: relative;
-
+.page-header--nojs {
   @media (max-width: $mobile-width-only) {
-    width: 100%;
-  }
-
-  @media (min-width: $tablet-width) {
-    padding-top: 18px;
-    padding-right: 65px;
-    width: 100%;
-  }
-
-  @media (min-width: $desktop-width) {
-    background-color: transparent;
-
-    padding-top: 47px;
-    padding-right: 110px;
+    background-position: center bottom 179px, center 265px;
   }
 }
 
-.page-header__upper-row-wrap--border {
+.page-header__upper-row-container {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0 auto;
+    padding: 24px 30px 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 51px 110px;
+  }
+}
+
+.page-header__upper-row-container--border {
   @media (max-width: $mobile-width-only) {
     border-bottom: 1px solid $special-gainsboro;
   }
+}
 
-  @media (min-width: $tablet-width) {
-    padding-right: 35px;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding-right: 110px;
+.page-header__inner-row-container {
+  @media (max-width: $mobile-width-only) {
+    position: relative;
   }
 }
 
-.page-header__upper-inner-wrap {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  min-height: 66px;
-}
+// .page-header__upper-row-wrap {
+//   background-color: $basic-white;
+
+//   position: relative;
+
+//   @media (max-width: $mobile-width-only) {
+//     width: 100%;
+//   }
+
+//   @media (min-width: $tablet-width) {
+//     padding-top: 18px;
+//     padding-right: 65px;
+//     width: 100%;
+//   }
+
+//   @media (min-width: $desktop-width) {
+//     background-color: transparent;
+
+//     padding-top: 47px;
+//     padding-right: 110px;
+//   }
+// }
+
+// .page-header__upper-row-wrap--border {
+//   @media (max-width: $mobile-width-only) {
+//     border-bottom: 1px solid $special-gainsboro;
+//   }
+
+//   @media (min-width: $tablet-width) {
+//     padding-right: 35px;
+//   }
+
+//   @media (min-width: $desktop-width) {
+//     padding-right: 110px;
+//   }
+// }
 
 .page-header__logo-link {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
+  @media (max-width: $mobile-width-only) {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 14px 20px;
+  }
 
-  @media (min-width: $tablet-width) {
-    &:hover {
-      opacity: 0.8;
-    }
+  &:hover {
+    opacity: 0.8;
+  }
 
-    &:active {
-      opacity: 0.6;
-    }
+  &:active {
+    opacity: 0.6;
   }
 }
 
@@ -127,25 +163,61 @@
 
   border: none;
   position: absolute;
-  width: 25px;
-  height: 18px;
+  width: 19px;
+  height: 19px;
   z-index: 10;
-  right: 22px;
-  top: 17px;
+  right: 23px;
+  top: 22px;
+  padding: 0;
 
   @media (min-width: $tablet-width) {
     display: none;
   }
 }
 
-.page-header__toggle--closed {
-  &::before {
-    content: "|||";
-    position: absolute;
-    width: 24px;
-    height: 16px;
-    transform: rotate(90deg);
+.page-header__toggle--opened {
+  @media (max-width: $mobile-width-only) {
+    &::before,
+    &::after {
+      content: "";
+      width: 25px;
+      height: 1.5px;
+      position: absolute;
+      right: -4px;
 
-    font-size: 28px;
+      background-color: $base-black;
+    }
+
+    &::before {
+      transform: rotate(45deg);
+    }
+
+    &::after {
+      transform: rotate(-45deg);
+    }
+  }
+}
+
+.page-header__toggle--closed {
+  @media (max-width: $mobile-width-only) {
+    &::before {
+      content: "";
+      position: absolute;
+      width: 24px;
+      height: 1.5px;
+      left: -2px;
+      top: 2px;
+
+      background-color: $base-black;
+      box-shadow:
+        0 8px 0 0 $base-black,
+        0 16px 0 0 $base-black;
+    }
+  }
+}
+
+.page-header__toggle--nojs {
+  @media (max-width: $mobile-width-only) {
+    display: none;
   }
 }
