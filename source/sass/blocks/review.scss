@@ -271,7 +271,11 @@
 
 .review__slider-item {
   display: none;
-  margin-bottom: 27px;
+  margin-bottom: 19px;
+
+  @media (max-width: $mobile-width-only) {
+    min-height: 245px;
+  }
 
   @media (min-width: $tablet-width) {
     margin-bottom: 10px;

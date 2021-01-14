@@ -13,6 +13,8 @@ const webp = require("gulp-webp");
 const svgstore = require("gulp-svgstore");
 const del = require("del");
 const sync = require("browser-sync").create();
+const posthtml = require("gulp-posthtml");
+const include = require("posthtml-include");
 
 // Styles
 
@@ -37,7 +39,7 @@ exports.styles = styles;
 
 const html = () => {
   return gulp.src("source/*.html")
-    .pipe(htmlmin({collapseWhitespace: true}))
+    .pipe(posthtml([include()]))
     .pipe(gulp.dest("build"))
 }
 
@@ -83,9 +85,9 @@ exports.createWebp = createWebp;
 
 const sprite = () => {
   return gulp.src("source/img/icons/*.svg")
-    .pipe(svgstore())
+    .pipe(svgstore({inlineSvg:true}))
     .pipe(rename("sprite.svg"))
-    .pipe(gulp.dest("build/img/icons"));
+    .pipe(gulp.dest("build/img"));
 }
 
 exports.sprite = sprite;
@@ -123,6 +125,10 @@ const server = (done) => {
     ui: false,
   });
   done();
+  gulp.watch("source/sass/**/*.scss", gulp.series(styles));
+  gulp.watch("source/js/*.js", gulp.series(scripts));
+  gulp.watch("source/*.html", gulp.series(html, reload));
+  gulp.watch("source/img/icons/*.svg", gulp.series(sprite, html, reload));
 }
 
 exports.server = server;
@@ -134,45 +140,23 @@ const reload = done => {
   done();
 }
 
-// Watcher
-
-const watcher = () => {
-  gulp.watch("source/sass/**/*.scss", gulp.series(styles));
-  gulp.watch("source/js/*.js", gulp.series(scripts));
-  gulp.watch("source/*.html", gulp.series(html, reload));
-}
-
 // Build
 
 const build = gulp.series(
   clean,
-  gulp.parallel(
-    styles,
-    html,
-    copy,
-    images,
-    createWebp,
-    sprite,
-    scripts
-  )
-)
+  styles,
+  scripts,
+  sprite,
+  copy,
+  createWebp,
+  html
+);
 
 exports.build = build;
 
 // Default
 
 exports.default = gulp.series(
-  clean,
-  gulp.parallel(
-    styles,
-    html,
-    copy,
-    createWebp,
-    sprite,
-    scripts
-  ),
-  gulp.series(
-    server,
-    watcher
-  )
+  build,
+  server
 )

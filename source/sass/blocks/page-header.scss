@@ -80,49 +80,16 @@
   }
 }
 
-// .page-header__upper-row-wrap {
-//   background-color: $basic-white;
-
-//   position: relative;
-
-//   @media (max-width: $mobile-width-only) {
-//     width: 100%;
-//   }
-
-//   @media (min-width: $tablet-width) {
-//     padding-top: 18px;
-//     padding-right: 65px;
-//     width: 100%;
-//   }
-
-//   @media (min-width: $desktop-width) {
-//     background-color: transparent;
-
-//     padding-top: 47px;
-//     padding-right: 110px;
-//   }
-// }
-
-// .page-header__upper-row-wrap--border {
-//   @media (max-width: $mobile-width-only) {
-//     border-bottom: 1px solid $special-gainsboro;
-//   }
-
-//   @media (min-width: $tablet-width) {
-//     padding-right: 35px;
-//   }
-
-//   @media (min-width: $desktop-width) {
-//     padding-right: 110px;
-//   }
-// }
-
 .page-header__logo-link {
   @media (max-width: $mobile-width-only) {
     display: flex;
-    justify-content: flex-start;
+    width: 235px;
     align-items: center;
     padding: 14px 20px;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: block;
   }
 
   &:hover {

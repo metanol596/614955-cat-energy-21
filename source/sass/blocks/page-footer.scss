@@ -41,15 +41,14 @@
 }
 
 .page-footer__socials {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(3, max-content);
+  column-gap: 36px;
   justify-content: center;
-  flex-wrap: wrap;
-  width: 280px;
-  padding-top: 20px;
-  padding-right: 8px;
-  padding-bottom: 11px;
+  align-items: center;
+  width: 100%;
+  padding-top: 23px;
+  padding-bottom: 8px;
   border-top: 1px solid $special-gainsboro;
   border-bottom: 1px solid $special-gainsboro;
 
@@ -63,16 +62,11 @@
 }
 
 .page-footer__socials-item {
-  margin-right: 36px;
   margin-bottom: 10px;
 
   @media (min-width: $tablet-width) {
     margin-right: 26px;
   }
-}
-
-.page-footer__socials-item--null-indent {
-  margin-right: 0;
 }
 
 .page-footer__socials-link {
@@ -87,24 +81,25 @@
 }
 
 .page-footer__social-icon.fb-icon {
+  fill: none;
   stroke: $special-dim-grey;
 }
 
-.page-footer__socials-link:hover .page-footer__social-icon.vk-icon,
-.page-footer__socials-link:hover .page-footer__social-icon.inst-icon {
+.page-footer__socials-link:hover .vk-icon,
+.page-footer__socials-link:hover .inst-icon {
   fill: $basic-green;
 }
 
-.page-footer__socials-link:hover .page-footer__social-icon.fb-icon {
+.page-footer__socials-link:hover .fb-icon {
   stroke: $basic-green;
 }
 
-.page-footer__socials-link:active .page-footer__social-icon.vk-icon,
-.page-footer__socials-link:active .page-footer__social-icon.inst-icon {
+.page-footer__socials-link:active .vk-icon,
+.page-footer__socials-link:active .inst-icon {
   opacity: 0.3;
 }
 
-.page-footer__socials-link:active .page-footer__social-icon.fb-icon {
+.page-footer__socials-link:active .fb-icon {
   opacity: 0.3;
 }
 
