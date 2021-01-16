@@ -60,10 +60,11 @@
     justify-content: space-between;
     width: 100%;
     margin: 0 auto;
-    padding: 24px 30px 30px;
+    padding: 24px 30px 27px;
   }
 
   @media (min-width: $desktop-width) {
+    width: 1440px;
     padding: 51px 110px;
   }
 }

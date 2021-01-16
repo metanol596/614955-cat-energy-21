@@ -31,6 +31,8 @@
     "test": "npm run editorconfig && npm run stylelint",
     "start": "gulp",
     "images": "gulp images",
+    "createWebp": "gulp createWebp",
+    "sprite": "gulp sprite",
     "html": "gulp html",
     "build": "gulp build",
     "scripts": "gulp scripts",

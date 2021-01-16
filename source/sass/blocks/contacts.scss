@@ -2,6 +2,9 @@
   @media (min-width: $desktop-width) {
     position: relative;
     padding: 97px 0 105px;
+    min-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
   }
 }
 
@@ -12,9 +15,10 @@
 .contacts__wrapper {
   @media (min-width: $desktop-width) {
     position: relative;
-    max-width: 1440px;
-    width: 100%;
-    margin-left: auto;
+    min-width: 571px;
+    margin: 0;
+    padding: 0;
+    transform: translateX(110px);
     z-index: 100;
   }
 }
@@ -27,19 +31,20 @@
   padding-bottom: 27px;
 
   @media (min-width: $tablet-width) {
-    padding: 0;
-    padding-left: 41px;
-    padding-right: 41px;
-    padding-bottom: 63px;
+    padding: 0 41px 59px;
   }
 
   @media (min-width: $desktop-width) {
     width: 570px;
-    left: 110px;
-    top: 95px;
-    padding: 66px 88px 61px 77px;
+    padding: 66px 88px 45px 77px;
 
     background-color: $basic-white;
+  }
+}
+
+.contacts__content--index {
+  @media (min-width: $tablet-width) {
+    padding-top: 64px;
   }
 }
 
@@ -47,12 +52,26 @@
   padding-top: 27px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 0;
+    padding-top: 62px;
   }
 
   @media (min-width: $desktop-width) {
     padding-top: 65px;
-    padding-bottom: 63px;
+    padding-bottom: 44px;
+  }
+}
+
+.contacts__content--form {
+  padding-top: 33px;
+  padding-bottom: 21px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 61px;
+    padding-bottom: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 48px;
   }
 }
 
@@ -71,11 +90,11 @@
     line-height: 24px;
 
     width: 171px;
-    padding-top: 66px;
   }
 
   @media (min-width: $desktop-width) {
     padding-top: 0;
+    padding-bottom: 16px;
 
     text-align: left;
   }
@@ -95,10 +114,17 @@
   @media (min-width: $tablet-width) {
     width: 159px;
     text-align: right;
-    padding-top: 63px;
 
     font-size: 16px;
     line-height: 20px;
+
+    &-span {
+      display: block;
+
+      &:first-of-type {
+        margin-bottom: 19px;
+      }
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -127,6 +153,7 @@
   }
 
   @media (min-width: $tablet-width) {
+    width: 100%;
     height: 400px;
 
     background-image: url("../../img/map-tablet.jpg");
@@ -140,6 +167,7 @@
     position: absolute;
     left: 0;
     top: 0;
+    width: 100%;
     height: 100%;
 
     background-image: url("../../img/map-desktop.jpg");
