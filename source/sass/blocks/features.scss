@@ -15,7 +15,7 @@
   background-color: $basic-grey;
   background-repeat: no-repeat;
 
-  padding: 30px 20px 22px;
+  padding: 30px 20px 17px;
   width: 100%;
 
   @media (min-width: $tablet-width) {
@@ -32,13 +32,13 @@
 .features__slim-item {
   margin-bottom: 20px;
 
-  background-image: url("../../img/cat-slim-icon.svg");
+  background-image: url("../img/cat-slim-icon.svg");
   background-position: 22px 21px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 30px;
 
-    background-image: url("../../img/cat-slim-big-icon.svg");
+    background-image: url("../img/cat-slim-big-icon.svg");
     background-position: right 63px top 82px;
   }
 
@@ -46,22 +46,22 @@
     margin-right: 80px;
     margin-bottom: 0;
 
-    background-image: url("../../img/slim-cat-back-desk.svg");
+    background-image: url("../img/slim-cat-back-desk.svg");
     background-position: left 52px top 42px;
   }
 }
 
 .features__pro-item {
-  background-image: url("../../img/cat-pro-icon.svg");
+  background-image: url("../img/cat-pro-icon.svg");
   background-position: 12px 24px;
 
   @media (min-width: $tablet-width) {
-    background-image: url("../../img/cat-pro-big-icon.svg");
+    background-image: url("../img/cat-pro-big-icon.svg");
     background-position: right 29px top 92px;
   }
 
   @media (min-width: $desktop-width) {
-    background-image: url("../../img/pro-cat-back-desk.svg");
+    background-image: url("../img/pro-cat-back-desk.svg");
     background-position: left 33px top 48px;
   }
 }
@@ -100,7 +100,7 @@
   color: $special_dark-grey;
 
   margin: 0;
-  margin-bottom: 19px;
+  margin-bottom: 16px;
   padding: 0;
   padding-bottom: 22px;
   border-bottom: 1px solid $special-gainsboro;
@@ -145,36 +145,36 @@
   text-transform: uppercase;
   color: $base-black;
 
-  display: flex;
-
-  &-text {
-    margin-right: 17px;
-  }
-
-  &-icon {
-    display: flex;
-    overflow: hidden;
-    width: 32px;
-    height: 12px;
-  }
+  display: inline-flex;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
 
     align-items: center;
-
-    &-text {
-      margin-right: 25px;
-    }
   }
+}
+
+.features__link-text {
+  margin-right: 17px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 25px;
+  }
+}
+
+.features__link-icon {
+  display: flex;
+  overflow: hidden;
+  width: 32px;
+  height: 12px;
 }
 
 .features__arrow-icon-container {
   transform: translateX(-4px);
+  transition: all 0.3s;
 }
 
 .features__link:hover .features__arrow-icon-container {
   transform: translateX(0);
-  transition: transform 0.4s ease-in-out;
 }

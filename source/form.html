@@ -4,18 +4,23 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Academy: Подбор программы</title>
+    <link rel="preload" href="fonts/oswaldmedium.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/oswaldregular.woff2" as="font" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body class="page-body">
+    <div class="page-body__sprite-svg">
+      <include src="build/img/icons/sprite.svg"></include>
+    </div>
     <header class="page-header">
       <div class="page-header__upper-row-container page-header__upper-row-container--border">
         <div class="page-header__inner-row-container">
           <a class="page-header__logo-link" href="index.html" role="img" aria-label="Логотип нашего магазина">
             <svg class="page-header__logo-icon" width="34" height="38" aria-hidden="true">
-              <use href="img/icons/sprite.svg#logo-mobile"></use>
+              <use href="#logo-mobile"></use>
             </svg>
             <svg class="page-header__logo-brand" width="101" height="18" aria-hidden="true">
-              <use href="img/icons/sprite.svg#header-logo-2"></use>
+              <use href="#header-logo-2"></use>
             </svg>
             <picture>
               <source media="(min-width: 1440px)" srcset="img/icons/logo-desktop.svg">
@@ -87,14 +92,14 @@
               <label class="form__label form__contacts-label">E&#8209;mail:&#42;</label>
               <input class="form__input form__email-input error" type="email" name="email-field" id="email-id" placeholder="kuklachev@gmail.com" required>
               <svg class="form__contact-row-container-email-icon" width="20" height="15">
-                <use href="img/icons/sprite.svg#icon-email"></use>
+                <use href="#icon-email"></use>
               </svg>
             </div>
             <div class="form__contact-row-container">
               <label class="form__label form__contacts-label">Телефон:&#42;</label>
               <input class="form__input form__tel-input error" type="tel" name="tel-field" id="tel-id" placeholder="8 (960) 900-60-90" required>
               <svg class="form__contact-row-container-phone-icon" width="20" height="21">
-                <use href="img/icons/sprite.svg#phone-icon"></use>
+                <use href="#phone-icon"></use>
               </svg>
             </div>
           </div>
@@ -158,28 +163,28 @@
       <div class="container page-footer__container">
         <a class="page-footer__logo-link" aria-label="Логотип нашего магазина">
           <svg class="page-footer__logo" width="128" height="24">
-            <use href="img/icons/sprite.svg#footer-logo"></use>
+            <use href="#footer-logo"></use>
           </svg>
         </a>
         <ul class="list-reset page-footer__socials">
           <li class="page-footer__socials-item">
             <a class="page-footer__socials-link link" href="https://vk.com" aria-label="Мы в Вконтакте">
               <svg class="page-footer__social-icon vk-icon" width="23" height="13">
-                <use href="img/icons/sprite.svg#icon-vkontakte"></use>
+                <use href="#icon-vkontakte"></use>
               </svg>
             </a>
           </li>
           <li class="page-footer__socials-item">
             <a class="page-footer__socials-link link" href="https://instagram.com" aria-label="Мы в Инстрагаме">
               <svg class="page-footer__social-icon inst-icon" width="16" height="16">
-                <use href="img/icons/sprite.svg#icon-instagram"></use>
+                <use href="#icon-instagram"></use>
               </svg>
             </a>
           </li>
           <li class="page-footer__socials-item page-footer__socials-item--null-indent">
             <a class="page-footer__socials-link link" href="https://facebook.com" aria-label="Мы в Фейсбуке">
               <svg class="page-footer__social-icon fb-icon" width="13" height="20">
-                <use href="img/icons/sprite.svg#icon-facebook"></use>
+                <use href="#icon-facebook"></use>
               </svg>
             </a>
           </li>
@@ -187,7 +192,7 @@
         <a class="page-footer__academy-link link" href="https://htmlacademy.ru/intensive/adaptive">
           <p class="page-footer__academy-text">HTML Academy</p>
           <svg class="page-footer__academy-icon" width="27" height="34">
-            <use href="img/icons/sprite.svg#htmlacademy"></use>
+            <use href="#htmlacademy"></use>
           </svg>
         </a>
       </div>
