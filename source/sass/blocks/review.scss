@@ -18,6 +18,23 @@
   }
 }
 
+.review--bg-change {
+  @media (min-width: $desktop-width) {
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      z-index: 100;
+      width: 50%;
+      height: 73%;
+      right: 0;
+      top: 168px;
+      background-color: #eaeaea;
+    }
+  }
+}
+
 .review__container {
   padding-bottom: 35px;
 
@@ -266,6 +283,7 @@
     position: absolute;
     right: -26px;
     top: -262px;
+    z-index: 101;
   }
 }
 

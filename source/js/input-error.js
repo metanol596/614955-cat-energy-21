@@ -5,18 +5,17 @@ const inputWeightRequired = document.querySelector('.form__weight-input');
 const inputEmailRequired = document.querySelector('.form__email-input');
 const inputTelRequired = document.querySelector('.form__tel-input');
 
-inputTextRequired.forEach(function(element, index) {
-  element.classList.remove('error');
-})
-inputWeightRequired.classList.remove('form__weight-input--error');
-inputEmailRequired.classList.remove('form__email-input--error');
-inputTelRequired.classList.remove('form__tel-input--error');
+// inputTextRequired.forEach(function(element) {
+//   element.classList.remove('error');
+// })
+inputWeightRequired.classList.remove('error');
+inputEmailRequired.classList.remove('error');
+inputTelRequired.classList.remove('error');
 
-form.addEventListener('submit', (e) => {
-  inputTextRequired.forEach(function(element, index) {
-    if (element === '' || element === null) {
+form.addEventListener('submit', () => {
+  inputTextRequired.forEach(function(element) {
+    if (element.value == '' || element.value == null) {
       element.classList.add('error');
-      inputTextRequired[index].classList.add('error');
     }
   })
 })

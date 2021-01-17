@@ -11,6 +11,8 @@ const uglify = require("gulp-uglify-es").default;
 const imagemin = require("gulp-imagemin");
 const webp = require("gulp-webp");
 const svgstore = require("gulp-svgstore");
+const svgattrremove = require("gulp-cheerio");
+const replace = require("gulp-replace");
 const del = require("del");
 const sync = require("browser-sync").create();
 const posthtml = require("gulp-posthtml");
@@ -85,6 +87,13 @@ exports.createWebp = createWebp;
 
 const sprite = () => {
   return gulp.src("source/img/icons/*.svg")
+    .pipe(svgattrremove({
+      run: function ($) {
+        $(['stroke']).removeAttr('stroke');
+      },
+      parserOptions: {xmlMode: true}
+    }))
+    .pipe(replace('&gt;', '>'))
     .pipe(svgstore({inlineSvg:true}))
     .pipe(rename("sprite.svg"))
     .pipe(gulp.dest("build/img"));
