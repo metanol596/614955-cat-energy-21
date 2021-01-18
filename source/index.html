@@ -9,15 +9,15 @@
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body class="page-body">
-    <div class="visually-hidden">
+    <div class="page-body__sprite-svg">
       <include src="build/img/icons/sprite.svg"></include>
     </div>
-    <div class="page-header page-header--bg page-header--nojs">
+    <div class="page-header page-header--bg page-header--bg-opened-menu page-header--nojs">
       <header class="page-header__upper-row-container">
         <div class="page-header__inner-row-container">
           <a class="page-header__logo-link" role="img" aria-label="Логотип нашего магазина">
             <svg class="page-header__logo-icon" width="34" height="38" aria-hidden="true">
-              <use href="img/icons/sprite.svg#logo-mobile"></use>
+              <use href="#logo-mobile"></use>
             </svg>
             <svg class="page-header__logo-brand" width="101" height="18" aria-hidden="true">
               <use href="#header-logo-2"></use>
@@ -43,7 +43,7 @@
           </ul>
         </nav>
       </header>
-      <section class="page-promo page-promo__container container">
+      <section class="page-promo page-promo--container container">
         <div class="page-promo__inner-container">
           <h1 class="page-promo__intro">Функциональное питание для котов</h1>
           <p class="page-promo__slogan">
@@ -67,7 +67,7 @@
       </section>
     </div>
     <main class="page-main">
-      <section class="features features__container page-main__features container">
+      <section class="features features--container page-main__features container">
         <h2 class="visually-hidden">Виды кормов в нашем магазине</h2>
         <ul class="list-reset features__list">
           <li class="features__item features__slim-item">
@@ -112,7 +112,7 @@
           </li>
         </ul>
       </section>
-      <section class="instructions instructions__container page-main__instructions container">
+      <section class="instructions instructions--container page-main__instructions container">
         <h2 class="instructions__title">Как это работает</h2>
         <ul class="list-reset instructions__list">
           <li class="instructions__item instructions__item--leaf">
@@ -275,7 +275,7 @@
     </footer>
     <script src="js/menu.min.js"></script>
     <script src="js/slider.min.js"></script>
-    <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=3d8a1f00-1051-4fd8-be61-405518f7f546&lang=ru_RU"></script>
     <script src="js/map.min.js"></script>
   </body>
 </html>

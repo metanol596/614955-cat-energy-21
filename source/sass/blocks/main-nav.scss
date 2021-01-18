@@ -1,6 +1,6 @@
 .main-nav {
   @media (max-width: $mobile-width-only) {
-    position: absolute;
+    position: static;
     left: 0;
     top: 66px;
     z-index: 10;

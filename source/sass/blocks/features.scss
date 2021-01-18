@@ -1,4 +1,4 @@
-.features__container {
+.features--container {
   @media (min-width: $desktop-width) {
     width: 100%;
   }
@@ -177,4 +177,9 @@
 
 .features__link:hover .features__arrow-icon-container {
   transform: translateX(0);
+}
+
+.features__link:active:hover,
+.features__link:active:hover .features__arrow-icon-container {
+  opacity: 0.3;
 }

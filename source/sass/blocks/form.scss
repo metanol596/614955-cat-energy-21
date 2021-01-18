@@ -484,6 +484,8 @@
 
   @media (min-width: $tablet-width) {
     left: 59px;
+    display: inline-flex;
+    width: 75%;
 
     &::before {
       width: 40px;
@@ -516,8 +518,8 @@
 
   @media (min-width: $tablet-width) {
     left: -48px;
-    top: 24%;
-    transform: translateY(-50%);
+    top: 50%;
+    height: 30px;
   }
 }
 
