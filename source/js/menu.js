@@ -19,6 +19,7 @@ navToggle.addEventListener('click', function() {
       navMain.classList.remove('main-nav--opened');
       navToggle.classList.add('page-header__toggle--closed');
       navMain.classList.add('main-nav--closed');
+      headerMain.classList.remove('page-header--bg-opened-menu');
     }
   }
 })
