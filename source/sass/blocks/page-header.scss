@@ -11,11 +11,11 @@
 .page-header--bg {
   @media (max-width: $mobile-width-only) {
     background-image:
-      url("../../img/promo-trans-b.png"),
-      url("../../img/promo-cat-mobile.jpg");
+      url("../img/promo-trans-b.png"),
+      url("../img/promo-cat-mobile.jpg");
     background-size:
       100vw 302px,
-      563px 302px;
+      320px 302px;
     background-position:
       center 66px,
       center 66px;
@@ -23,15 +23,15 @@
 
     @media (min-resolution: 2dppx) {
       background-image:
-        url("../../img/promo-trans-mb@2x.png"),
-        url("../../img/promo-cat-mobile@2x.jpg");
+        url("../img/promo-trans-mb@2x.png"),
+        url("../img/promo-cat-mobile@2x.jpg");
     }
   }
 
   @media (min-width: $desktop-width) {
     background-image:
-      url("../../img/promo-trans-b.png"),
-      url("../../img/promo-cat-desktop.jpg");
+      url("../img/promo-trans-b.png"),
+      url("../img/promo-cat-desktop.jpg");
     background-size:
       50% 694px,
       720px 694px;
@@ -42,8 +42,8 @@
 
     @media (min-resolution: 2dppx) {
       background-image:
-        url("../../img/promo-trans-b@2x.png"),
-        url("../../img/promo-cat-desktop@2x.jpg");
+        url("../img/promo-trans-b@2x.png"),
+        url("../img/promo-cat-desktop@2x.jpg");
     }
   }
 }
@@ -60,10 +60,11 @@
     justify-content: space-between;
     width: 100%;
     margin: 0 auto;
-    padding: 24px 30px 30px;
+    padding: 24px 30px 27px;
   }
 
   @media (min-width: $desktop-width) {
+    width: 1440px;
     padding: 51px 110px;
   }
 }
@@ -80,49 +81,16 @@
   }
 }
 
-// .page-header__upper-row-wrap {
-//   background-color: $basic-white;
-
-//   position: relative;
-
-//   @media (max-width: $mobile-width-only) {
-//     width: 100%;
-//   }
-
-//   @media (min-width: $tablet-width) {
-//     padding-top: 18px;
-//     padding-right: 65px;
-//     width: 100%;
-//   }
-
-//   @media (min-width: $desktop-width) {
-//     background-color: transparent;
-
-//     padding-top: 47px;
-//     padding-right: 110px;
-//   }
-// }
-
-// .page-header__upper-row-wrap--border {
-//   @media (max-width: $mobile-width-only) {
-//     border-bottom: 1px solid $special-gainsboro;
-//   }
-
-//   @media (min-width: $tablet-width) {
-//     padding-right: 35px;
-//   }
-
-//   @media (min-width: $desktop-width) {
-//     padding-right: 110px;
-//   }
-// }
-
 .page-header__logo-link {
   @media (max-width: $mobile-width-only) {
     display: flex;
-    justify-content: flex-start;
+    width: 235px;
     align-items: center;
     padding: 14px 20px;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: block;
   }
 
   &:hover {

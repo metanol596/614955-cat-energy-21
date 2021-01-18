@@ -104,14 +104,14 @@
 
 .instructions__item--leaf {
   &::before {
-    background-image: url("../../img/leaf-icon.svg");
+    background-image: url("../img/leaf-icon.svg");
   }
 
   @media (min-width: $tablet-width) {
     margin-right: 139px;
 
     &::before {
-      background-image: url("../../img/leaf-big-icon.svg");
+      background-image: url("../img/leaf-big-icon.svg");
     }
 
     &::after {
@@ -130,14 +130,14 @@
 
 .instructions__item--tub {
   &::before {
-    background-image: url("../../img/tub-icon.svg");
+    background-image: url("../img/tub-icon.svg");
   }
 
   @media (min-width: $tablet-width) {
     margin-right: 79px;
 
     &::before {
-      background-image: url("../../img/tub-big-icon.svg");
+      background-image: url("../img/tub-big-icon.svg");
     }
   }
 
@@ -148,14 +148,14 @@
 
 .instructions__item--eat {
   &::before {
-    background-image: url("../../img/eat-icon.svg");
+    background-image: url("../img/eat-icon.svg");
   }
 
   @media (min-width: $tablet-width) {
     margin-right: 139px;
 
     &::before {
-      background-image: url("../../img/eat-big-icon.svg");
+      background-image: url("../img/eat-big-icon.svg");
     }
   }
 
@@ -170,12 +170,12 @@
 
 .instructions__item--alarm {
   &::before {
-    background-image: url("../../img/alarm-icon.svg");
+    background-image: url("../img/alarm-icon.svg");
   }
 
   @media (min-width: $tablet-width) {
     &::before {
-      background-image: url("../../img/alarm-big-icon.svg");
+      background-image: url("../img/alarm-big-icon.svg");
     }
 
     &::after {

@@ -23,7 +23,7 @@ if (mapBlock) {
   function init() {
     const myMap = new ymaps.Map(mapBlock, {
       center: [mapState.latitude, mapState.longitude],
-      zoom: 17,
+      zoom: 19,
     });
     const myPlacemark = new ymaps.Placemark(
       [59.938635, 30.323118],
